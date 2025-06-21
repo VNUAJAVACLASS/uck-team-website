@@ -1,328 +1,472 @@
 <!DOCTYPE html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietnam National University of Agriculture</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/input.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vietnam National University of Agriculture</title>
-  <link rel="stylesheet" href="dist/output.css" />
-  <link rel="stylesheet" href="src/input.css" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-  <script src="i18n.js"></script>
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/i18n.js"></script>
+  </head>
 
-<body>
-  <header class="bg-gradient-to-r from-sky-800 via-sky-900 to-sky-950 text-white">
-    <!-- Top section with logo and title -->
-    <div class="container mx-auto px-4 py-4">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
-        <!-- Logo and University Info -->
-        <div class="flex items-center space-x-2 md:space-x-4">
-          <!-- University Logo -->
-          <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-            <img src="assets/vnua-logo.png" alt="VNUA Logo" class="w-full h-full object-contain" />
+  <body>
+    <header
+      class="bg-gradient-to-r from-sky-800 via-sky-900 to-sky-950 text-white"
+    >
+      <!-- Top section with logo and title -->
+      <div class="container mx-auto px-4 py-4">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0"
+        >
+          <!-- Logo and University Info -->
+          <div class="flex items-center space-x-2 md:space-x-4">
+            <!-- University Logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/vnua-logo.png"
+                alt="VNUA Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <!-- Fita Logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/fita-vnua-logo.png"
+                alt="FITA Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <!-- University Name -->
+            <div class="flex flex-col min-w-0">
+              <h1
+                class="text-sm md:text-2xl font-bold tracking-wide leading-tight"
+                data-i18n="header.university"
+              >
+                HỌC VIỆN NÔNG NGHIỆP VIỆT NAM
+              </h1>
+              <h2
+                class="text-xs md:text-lg font-medium text-blue-200 leading-tight"
+                data-i18n="header.faculty"
+              >
+                KHOA CÔNG NGHỆ THÔNG TIN
+              </h2>
+            </div>
           </div>
-          <!-- Fita Logo -->
-          <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-            <img src="assets/fita-vnua-logo.png" alt="FITA Logo" class="w-full h-full object-contain" />
-          </div>
-          <!-- University Name -->
-          <div class="flex flex-col min-w-0">
-            <h1 class="text-sm md:text-2xl font-bold tracking-wide leading-tight" data-i18n="header.university">
-              HỌC VIỆN NÔNG NGHIỆP VIỆT NAM
-            </h1>
-            <h2 class="text-xs md:text-lg font-medium text-blue-200 leading-tight" data-i18n="header.faculty">
-              KHOA CÔNG NGHỆ THÔNG TIN
-            </h2>
-          </div>
-        </div>
 
-        <!-- UCK TEAM section -->
-        <div class="flex items-center space-x-2 md:space-x-3">
-          <!-- UCK TEAM logo -->
-          <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-            <img src="assets/uck-team-logo.png" alt="UCK Team Logo" class="w-full h-full object-contain" />
-          </div>
+          <!-- UCK TEAM section -->
+          <div class="flex items-center space-x-2 md:space-x-3">
+            <!-- UCK TEAM logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/uck-team-logo.png"
+                alt="UCK Team Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
 
-          <!-- UCK TEAM text -->
-          <div class="text-left md:text-right">
-            <h3 class="text-lg md:text-2xl font-bold text-white">UCK TEAM</h3>
+            <!-- UCK TEAM text -->
+            <div class="text-left md:text-right">
+              <h3 class="text-lg md:text-2xl font-bold text-white">UCK TEAM</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Green and Yellow bottom section -->
-    <div class="h-4 relative">
-      <!-- Yellow line on bottom -->
-      <div class="absolute bottom-0 right-0 h-4 w-[70%]">
-        <div class="h-full bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-tl-full"></div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Green line outside header -->
-  <div class="h-4 w-[30.5%]">
-    <div class="h-full bg-gradient-to-r from-green-300 to-green-400 rounded-br-full"></div>
-  </div>
-
-  <!-- Navigation Menu -->
-  <nav class="bg-white shadow-md">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between">
-        <!-- Logo hoặc Brand (tùy chọn) -->
-        <div class="flex items-center">
-
+      <!-- Green and Yellow bottom section -->
+      <div class="h-4 relative">
+        <!-- Yellow line on bottom -->
+        <div class="absolute bottom-0 right-0 h-4 w-[70%]">
+          <div
+            class="h-full bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-tl-full"
+          ></div>
         </div>
-
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center justify-center flex-1">
-          <ul class="flex space-x-8 py-6">
-            <li>
-              <a href="index.html"
-                class="text-black hover:text-teal-600  2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.introduction">
-                Giới thiệu
-              </a>
-            </li>
-            <li>
-              <a href="projects.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.projects">
-                Dự án
-              </a>
-            </li>
-            <li>
-              <a href="collaborations.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.collaborations">
-                Hợp tác
-              </a>
-            </li>
-            <li>
-              <a href="achievements.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.achievements">
-                Thành tựu
-              </a>
-            </li>
-            <li>
-              <a href="gallery.html"
-                class="text-teal-600 hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.gallery">
-                Hoạt động
-              </a>
-            </li>
-            <li>
-              <a href="policy.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.policy">
-                Chính sách
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button"
-          class="md:hidden flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200">
-          <svg id="hamburger-icon" class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-          <svg id="close-icon" class="fill-current h-3 w-3 hidden" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <title>Close</title>
-            <path
-              d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-          </svg>
-        </button>
       </div>
+    </header>
+
+    <!-- Green line outside header -->
+    <div class="h-4 w-[30.5%]">
+      <div
+        class="h-full bg-gradient-to-r from-green-300 to-green-400 rounded-br-full"
+      ></div>
     </div>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu"
-      class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
-      <div class="flex flex-col h-full">
-        <!-- Mobile Menu Header -->
-        <div class="flex items-center justify-between p-4 border-b">
-          <span class="text-xl font-bold text-teal-600">Menu</span>
-          <button id="close-menu-button"
-            class="flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <!-- Navigation Menu -->
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo hoặc Brand (tùy chọn) -->
+          <div class="flex items-center"></div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center justify-center flex-1">
+            <ul class="flex space-x-8 py-6">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.introduction"
+                >
+                  Giới thiệu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.projects"
+                >
+                  Dự án
+                </a>
+              </li>
+              <li>
+                <a
+                  href="collaborations.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.collaborations"
+                >
+                  Hợp tác
+                </a>
+              </li>
+              <li>
+                <a
+                  href="achievements.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.achievements"
+                >
+                  Thành tựu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="text-teal-600 hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.gallery"
+                >
+                  Hoạt động
+                </a>
+              </li>
+              <li>
+                <a
+                  href="policy.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.policy"
+                >
+                  Chính sách
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200"
+          >
+            <svg
+              id="hamburger-icon"
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+            <svg
+              id="close-icon"
+              class="fill-current h-3 w-3 hidden"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Close</title>
               <path
-                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+              />
             </svg>
           </button>
         </div>
+      </div>
 
-        <!-- Mobile Menu Items -->
-        <div class="flex-1 overflow-y-auto">
-          <ul class="flex flex-col space-y-2 p-4">
-            <li>
-              <a href="index.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.introduction">
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+      >
+        <div class="flex flex-col h-full">
+          <!-- Mobile Menu Header -->
+          <div class="flex items-center justify-between p-4 border-b">
+            <span class="text-xl font-bold text-teal-600">Menu</span>
+            <button
+              id="close-menu-button"
+              class="flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200"
+            >
+              <svg
+                class="fill-current h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile Menu Items -->
+          <div class="flex-1 overflow-y-auto">
+            <ul class="flex flex-col space-y-2 p-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.introduction"
+                >
+                  Giới thiệu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.projects"
+                >
+                  Dự án
+                </a>
+              </li>
+              <li>
+                <a
+                  href="collaborations.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.collaborations"
+                >
+                  Hợp tác
+                </a>
+              </li>
+              <li>
+                <a
+                  href="achievements.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.achievements"
+                >
+                  Thành tựu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="block text-teal-600 hover:text-teal-800 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.gallery"
+                >
+                  Hoạt động
+                </a>
+              </li>
+              <li>
+                <a
+                  href="policy.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.policy"
+                >
+                  Chính sách
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-12 px-6" data-aos="fade-up">
+      <div class="container mx-auto text-center">
+        <div
+          class="flex justify-center items-center mb-6"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="bg-blue-400 p-4 rounded-2xl shadow-lg">
+            <i data-lucide="image" class="w-12 h-12 text-white"></i>
+          </div>
+        </div>
+        <h2
+          class="text-4xl md:text-6xl font-bold pb-6 bg-gradient-to-r from-yellow-500 to-teal-600 bg-clip-text text-transparent"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-i18n="gallery.title"
+        >
+          Hình ảnh hoạt động
+        </h2>
+        <p
+          class="text-xl text-gray-500 max-w-5xl mx-auto leading-relaxed"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-i18n="gallery.description"
+        >
+          Dưới đây là các hình ảnh ghi lại các hoạt động, khoảnh khắc của nhóm
+          trong quá trình hoạt động
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-6">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row justify-between items-start">
+          <!-- Left side -->
+          <div class="space-y-6 flex-1">
+            <!-- Logo and Team Name -->
+            <div class="flex items-center space-x-4">
+              <img
+                src="assets/uck-team-logo.png"
+                alt="UCK Team Logo"
+                class="w-20 h-20 object-contain"
+              />
+              <h3 class="text-2xl font-bold text-white">UCK TEAM</h3>
+            </div>
+
+            <!-- Description -->
+            <div class="text-gray-300 leading-relaxed max-w-3xl">
+              <p class="text-justify text-lg" data-i18n="footer.description">
+                UCK Team là đội ngũ nghiên cứu và phát triển công nghệ thông tin
+                tại Học viện Nông nghiệp Việt Nam. Chúng tôi chuyên về phát
+                triển các giải pháp công nghệ hiện đại, ứng dụng trí tuệ nhân
+                tạo và khoa học dữ liệu trong nông nghiệp. Với kinh nghiệm và
+                đam mê, UCK Team cam kết mang đến những sản phẩm chất lượng cao,
+                góp phần thúc đẩy sự phát triển của ngành nông nghiệp thông minh
+                và bền vững tại Việt Nam.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right side -->
+          <div class="lg:text-right">
+            <h4
+              class="text-2xl font-semibold text-white mb-4"
+              data-i18n="footer.sitemap"
+            >
+              Sơ đồ Website
+            </h4>
+            <nav class="space-y-3">
+              <a
+                href="index.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.introduction"
+              >
                 Giới thiệu
               </a>
-            </li>
-            <li>
-              <a href="projects.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.projects">
+              <a
+                href="projects.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.projects"
+              >
                 Dự án
               </a>
-            </li>
-            <li>
-              <a href="collaborations.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.collaborations">
+              <a
+                href="collaborations.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.collaborations"
+              >
                 Hợp tác
               </a>
-            </li>
-            <li>
-              <a href="achievements.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.achievements">
+              <a
+                href="achievements.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.achievements"
+              >
                 Thành tựu
               </a>
-            </li>
-            <li>
-              <a href="gallery.html"
-                class="block text-teal-600 hover:text-teal-800  hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.gallery">
+              <a
+                href="gallery.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.gallery"
+              >
                 Hoạt động
               </a>
-            </li>
-            <li>
-              <a href="policy.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.policy">
+              <a
+                href="policy.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.policy"
+              >
                 Chính sách
               </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <section></section>
-
-  <footer class="bg-gray-900 text-white py-6">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex flex-col lg:flex-row justify-between items-start ">
-        <!-- Left side -->
-        <div class="space-y-6 flex-1">
-          <!-- Logo and Team Name -->
-          <div class="flex items-center space-x-4">
-            <img src="assets/uck-team-logo.png" alt="UCK Team Logo" class="w-20 h-20 object-contain">
-            <h3 class="text-2xl font-bold text-white">UCK TEAM</h3>
-          </div>
-
-          <!-- Description -->
-          <div class="text-gray-300 leading-relaxed max-w-3xl">
-            <p class="text-justify text-lg" data-i18n="footer.description">UCK Team là đội ngũ nghiên cứu và phát triển
-              công nghệ thông tin tại Học viện Nông nghiệp Việt Nam. Chúng tôi chuyên về phát triển các giải pháp công
-              nghệ hiện đại, ứng dụng trí tuệ nhân tạo và khoa học dữ liệu trong nông nghiệp. Với kinh nghiệm và đam mê,
-              UCK Team cam kết mang đến những sản phẩm chất lượng cao, góp phần thúc đẩy sự phát triển của ngành nông
-              nghiệp thông minh và bền vững tại Việt Nam.</p>
+            </nav>
           </div>
         </div>
 
-        <!-- Right side -->
-        <div class="lg:text-right">
-          <h4 class="text-2xl font-semibold text-white mb-4" data-i18n="footer.sitemap">Sơ đồ Website</h4>
-          <nav class="space-y-3">
-            <a href="index.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.introduction">
-              Giới thiệu
-            </a>
-            <a href="projects.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.projects">
-              Dự án
-            </a>
-            <a href="collaborations.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.collaborations">
-              Hợp tác
-            </a>
-            <a href="achievements.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.achievements">
-              Thành tựu
-            </a>
-            <a href="gallery.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.gallery">
-              Hoạt động
-            </a>
-            <a href="policy.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.policy">
-              Chính sách
-            </a>
-          </nav>
+        <!-- Copyright - Moved to bottom and centered -->
+        <div class="pt-6 border-t border-gray-800 mt-6 text-center">
+          <p class="text-gray-400 text-lg" data-i18n="footer.copyright">
+            Copyright © UCK TEAM
+          </p>
         </div>
       </div>
+    </footer>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1600,
+        easing: "ease-in-out",
+        once: false,
+        mirror: false,
+      });
 
-      <!-- Copyright - Moved to bottom and centered -->
-      <div class="pt-6 border-t border-gray-800 mt-6 text-center">
-        <p class="text-gray-400 text-lg" data-i18n="footer.copyright">Copyright © UCK TEAM</p>
-      </div>
-    </div>
-  </footer>
-  <script>
-    // Mobile menu functionality
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const closeMenuButton = document.getElementById('close-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const closeIcon = document.getElementById('close-icon');
+      // Initialize Lucide icons
+      lucide.createIcons();
 
-    function openMenu() {
-      mobileMenu.classList.remove('translate-x-full');
-      mobileMenu.classList.add('translate-x-0');
-      hamburgerIcon.classList.add('hidden');
-      closeIcon.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // Prevent scrolling
-    }
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const closeMenuButton = document.getElementById("close-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const closeIcon = document.getElementById("close-icon");
 
-    function closeMenu() {
-      mobileMenu.classList.remove('translate-x-0');
-      mobileMenu.classList.add('translate-x-full');
-      hamburgerIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
-      document.body.style.overflow = 'auto'; // Restore scrolling
-    }
-
-    // Event listeners
-    mobileMenuButton.addEventListener('click', () => {
-      if (mobileMenu.classList.contains('translate-x-full')) {
-        openMenu();
-      } else {
-        closeMenu();
+      function openMenu() {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+        hamburgerIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // Prevent scrolling
       }
-    });
 
-    closeMenuButton.addEventListener('click', closeMenu);
-
-    // Close menu when clicking on menu items
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
-
-    // Close menu when clicking outside (optional)
-    mobileMenu.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) {
-        closeMenu();
+      function closeMenu() {
+        mobileMenu.classList.remove("translate-x-0");
+        mobileMenu.classList.add("translate-x-full");
+        hamburgerIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+        document.body.style.overflow = "auto"; // Restore scrolling
       }
-    });
 
-    // Handle window resize
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 768) { // md breakpoint
-        closeMenu();
-      }
-    });
-  </script>
-</body>
+      // Event listeners
+      mobileMenuButton.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("translate-x-full")) {
+          openMenu();
+        } else {
+          closeMenu();
+        }
+      });
 
+      closeMenuButton.addEventListener("click", closeMenu);
+
+      // Close menu when clicking on menu items
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      // Close menu when clicking outside (optional)
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+          closeMenu();
+        }
+      });
+
+      // Handle window resize
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          // md breakpoint
+          closeMenu();
+        }
+      });
+    </script>
+  </body>
 </html>

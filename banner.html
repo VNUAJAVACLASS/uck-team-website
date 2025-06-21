@@ -1,91 +1,137 @@
 <!DOCTYPE html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietnam National University of Agriculture</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/input.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vietnam National University of Agriculture</title>
-  <link rel="stylesheet" href="dist/output.css" />
-  <link rel="stylesheet" href="src/input.css" />
-</head>
+  <body>
+    <section
+      class="relative flex items-start 2xl:py-14 lg:py-8 md:py-0 bg-white overflow-hidden"
+    >
+      <div class="container mx-auto relative">
+        <div class="grid grid-cols-1 gap-y-10 lg:grid-cols-2">
+          <!-- Cột trái: Nội dung chính -->
+          <div>
+            <div class="relative z-20 text-center lg:text-left">
+              <span
+                class="text-5xl md:text-7xl 2xl:text-8xl mb-4 font-extrabold"
+              >
+                <span data-i18n="banner.research_group">Nhóm nghiên cứu</span>
+                <span
+                  class="bg-gradient-to-r from-yellow-400 to-teal-600 bg-clip-text text-transparent font-extrabold"
+                  >UCK TEAM</span
+                >
 
-<body>
-  <section class="relative flex items-start 2xl:py-14 lg:py-8 md:py-0 bg-white overflow-hidden">
-    <div class="container mx-auto relative">
-      <div class="grid grid-cols-1 gap-y-10 lg:grid-cols-2">
-        <!-- Cột trái: Nội dung chính -->
-        <div>
-          <div class="relative z-20 text-center lg:text-left">
-            <span class="text-5xl md:text-7xl 2xl:text-8xl mb-4 font-extrabold">
-              <span data-i18n="banner.research_group">Nhóm nghiên cứu</span>
-              <span class="text-blue-500 font-extrabold">UCK TEAM</span>
-
-              <span class="text-green-400 font-extrabold block" data-i18n="banner.vnua">
-                Học viện Nông nghiệp
+                <span
+                  class="text-green-400 font-extrabold block"
+                  data-i18n="banner.vnua"
+                >
+                  Học viện Nông nghiệp
+                </span>
+                <span
+                  class="text-green-400 font-extrabold block"
+                  data-i18n="banner.vietnam"
+                >
+                  Việt Nam</span
+                >
               </span>
-              <span class="text-green-400 font-extrabold block" data-i18n="banner.vietnam">
-                Việt Nam</span>
-            </span>
 
-            <p class="mb-4 lg:pb-3 md:pb-2 pt-10">
-              <span class="mr-2 text-gray-600 lg:text-xl 2xl:text-2xl" data-i18n="banner.description">
-                Nơi hội tụ các sinh viên ưu tú của khoa Công nghệ thông tin -
-                Học viện Nông nghiệp Việt Nam.
-              </span>
-            </p>
+              <p class="mb-4 lg:pb-3 md:pb-2 pt-10">
+                <span
+                  class="mr-2 text-gray-600 lg:text-xl 2xl:text-2xl"
+                  data-i18n="banner.description"
+                >
+                  Nơi hội tụ các sinh viên ưu tú của khoa Công nghệ thông tin -
+                  Học viện Nông nghiệp Việt Nam.
+                </span>
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- Cột phải: Hình ảnh & các box thông điệp -->
-        <div class="lg:ml-8 2xl:pt-6 lg:pt-4">
-          <div class="relative lg:ml-4">
-            <!-- Các box thông điệp -->
-            <div class="relative grid grid-cols-1 sm:grid-cols-2 md:gap-4">
-              <div>
-                <div class="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-4">
+          <!-- Cột phải: Hình ảnh & các box thông điệp -->
+          <div class="lg:ml-8 2xl:pt-6 lg:pt-4">
+            <div class="relative lg:ml-4">
+              <!-- Các box thông điệp -->
+              <div class="relative grid grid-cols-1 sm:grid-cols-2 md:gap-4">
+                <div>
                   <div
-                    class="flex items-center justify-center bg-gray-100 rounded-xl lg:min-h-[200px] 2xl:min-h-[250px] min-h-[100px]"
-                    style="backdrop-filter: blur(6px)">
-                    <div class="p-2 sm:p-3 xl:p-5 text-center text-2xl font-bold">
-                      <span class="hero-animation-fade text-gray-500" data-i18n="banner.academy">
-                        Học viện Nông nghiệp
-                      </span>
-                      <span class="hero-animation-fade text-gray-500 block" data-i18n="banner.vietnam">
-                        Việt Nam
-                      </span>
+                    class="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-4"
+                  >
+                    <div
+                      class="flex items-center justify-center bg-gray-100 rounded-xl lg:min-h-[200px] 2xl:min-h-[250px] min-h-[100px]"
+                      style="backdrop-filter: blur(6px)"
+                    >
+                      <div
+                        class="p-2 sm:p-3 xl:p-5 text-center text-2xl font-bold"
+                      >
+                        <span
+                          class="hero-animation-fade text-gray-500"
+                          data-i18n="banner.academy"
+                        >
+                          Học viện Nông nghiệp
+                        </span>
+                        <span
+                          class="hero-animation-fade text-gray-500 block"
+                          data-i18n="banner.vietnam"
+                        >
+                          Việt Nam
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    class="flex items-center justify-center bg-gray-100 rounded-xl lg:min-h-[200px] 2xl:min-h-[250px] min-h-[100px]"
-                    style="backdrop-filter: blur(6px)">
-                    <div class="p-2 sm:p-3 xl:p-5 text-center text-2xl font-bold">
-                      <span class="hero-animation-fade hero-animation-delay-2 text-gray-500" data-i18n="banner.values">
-                        Trân trọng, Hòa đồng & Phát triển
-                      </span>
+                    <div
+                      class="flex items-center justify-center bg-gray-100 rounded-xl lg:min-h-[200px] 2xl:min-h-[250px] min-h-[100px]"
+                      style="backdrop-filter: blur(6px)"
+                    >
+                      <div
+                        class="p-2 sm:p-3 xl:p-5 text-center text-2xl font-bold"
+                      >
+                        <span
+                          class="hero-animation-fade hero-animation-delay-2 text-gray-500"
+                          data-i18n="banner.values"
+                        >
+                          Trân trọng, Hòa đồng & Phát triển
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="mt-2">
-                <div class="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-4">
+                <div class="mt-2">
                   <div
-                    class="flex items-center justify-center bg-gray-100 rounded-xl lg:min-h-[200px] 2xl:min-h-[250px] min-h-[100px]"
-                    style="backdrop-filter: blur(6px)">
-                    <div class="p-2 sm:p-3 xl:p-5 text-center text-2xl font-bold">
-                      <span class="hero-animation-fade hero-animation-delay-1 text-gray-500"
-                        data-i18n="banner.faculty_info">
-                        Khoa Công nghệ thông tin
-                      </span>
+                    class="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-4"
+                  >
+                    <div
+                      class="flex items-center justify-center bg-gray-100 rounded-xl lg:min-h-[200px] 2xl:min-h-[250px] min-h-[100px]"
+                      style="backdrop-filter: blur(6px)"
+                    >
+                      <div
+                        class="p-2 sm:p-3 xl:p-5 text-center text-2xl font-bold"
+                      >
+                        <span
+                          class="hero-animation-fade hero-animation-delay-1 text-gray-500"
+                          data-i18n="banner.faculty_info"
+                        >
+                          Khoa Công nghệ thông tin
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    class="flex items-center justify-center bg-gray-100 rounded-xl lg:min-h-[200px] 2xl:min-h-[250px] min-h-[100px]"
-                    style="backdrop-filter: blur(6px)">
-                    <div class="p-2 sm:p-3 xl:p-5 text-center text-2xl font-bold">
-                      <span class="hero-animation-fade hero-animation-delay-3 text-gray-500"
-                        data-i18n="banner.java_team">
-                        Java Team
-                      </span>
+                    <div
+                      class="flex items-center justify-center bg-gray-100 rounded-xl lg:min-h-[200px] 2xl:min-h-[250px] min-h-[100px]"
+                      style="backdrop-filter: blur(6px)"
+                    >
+                      <div
+                        class="p-2 sm:p-3 xl:p-5 text-center text-2xl font-bold"
+                      >
+                        <span
+                          class="hero-animation-fade hero-animation-delay-3 text-gray-500"
+                          data-i18n="banner.java_team"
+                        >
+                          Java Team
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -94,40 +140,37 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <style>
-    /* Hiệu ứng mờ dần cho các box thông điệp */
-    .hero-animation-fade {
-      animation: fadeInOut 6s ease-in-out infinite;
-    }
-
-    /* Delay cho các hiệu ứng mờ dần */
-    .hero-animation-delay-1 {
-      animation-delay: 1s;
-    }
-
-    .hero-animation-delay-2 {
-      animation-delay: 2s;
-    }
-
-    .hero-animation-delay-3 {
-      animation-delay: 3s;
-    }
-
-    @keyframes fadeInOut {
-
-      0%,
-      100% {
-        opacity: 0;
+    <style>
+      /* Hiệu ứng mờ dần cho các box thông điệp */
+      .hero-animation-fade {
+        animation: fadeInOut 6s ease-in-out infinite;
       }
 
-      50% {
-        opacity: 1;
+      /* Delay cho các hiệu ứng mờ dần */
+      .hero-animation-delay-1 {
+        animation-delay: 1s;
       }
-    }
-  </style>
-</body>
 
+      .hero-animation-delay-2 {
+        animation-delay: 2s;
+      }
+
+      .hero-animation-delay-3 {
+        animation-delay: 3s;
+      }
+
+      @keyframes fadeInOut {
+        0%,
+        100% {
+          opacity: 0;
+        }
+
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </body>
 </html>

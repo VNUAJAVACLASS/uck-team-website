@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vietnam National University of Agriculture</title>
@@ -9,748 +8,1093 @@
     <link rel="stylesheet" href="src/input.css" />
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="i18n.js"></script>
-</head>
+    <script src="js/i18n.js"></script>
+  </head>
 
-<body>
-    <header class="bg-gradient-to-r from-sky-800 via-sky-900 to-sky-950 text-white">
-        <!-- Top section with logo and title -->
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
-                <!-- Logo and University Info -->
-                <div class="flex items-center space-x-2 md:space-x-4">
-                    <!-- University Logo -->
-                    <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-                        <img src="assets/vnua-logo.png" alt="VNUA Logo" class="w-full h-full object-contain" />
-                    </div>
-                    <!-- Fita Logo -->
-                    <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-                        <img src="assets/fita-vnua-logo.png" alt="FITA Logo" class="w-full h-full object-contain" />
-                    </div>
-                    <!-- University Name -->
-                    <div class="flex flex-col min-w-0">
-                        <h1 class="text-sm md:text-2xl font-bold tracking-wide leading-tight"
-                            data-i18n="header.university">
-                            HỌC VIỆN NÔNG NGHIỆP VIỆT NAM
-                        </h1>
-                        <h2 class="text-xs md:text-lg font-medium text-blue-200 leading-tight"
-                            data-i18n="header.faculty">
-                            KHOA CÔNG NGHỆ THÔNG TIN
-                        </h2>
-                    </div>
-                </div>
-
-                <!-- UCK TEAM section -->
-                <div class="flex items-center space-x-2 md:space-x-3">
-                    <!-- UCK TEAM logo -->
-                    <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-                        <img src="assets/uck-team-logo.png" alt="UCK Team Logo" class="w-full h-full object-contain" />
-                    </div>
-
-                    <!-- UCK TEAM text -->
-                    <div class="text-left md:text-right">
-                        <h3 class="text-lg md:text-2xl font-bold text-white">UCK TEAM</h3>
-                    </div>
-                </div>
+  <body>
+    <header
+      class="bg-gradient-to-r from-sky-800 via-sky-900 to-sky-950 text-white"
+    >
+      <!-- Top section with logo and title -->
+      <div class="container mx-auto px-4 py-4">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0"
+        >
+          <!-- Logo and University Info -->
+          <div class="flex items-center space-x-2 md:space-x-4">
+            <!-- University Logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/vnua-logo.png"
+                alt="VNUA Logo"
+                class="w-full h-full object-contain"
+              />
             </div>
-        </div>
-
-        <!-- Green and Yellow bottom section -->
-        <div class="h-4 relative">
-            <!-- Yellow line on bottom -->
-            <div class="absolute bottom-0 right-0 h-4 w-[70%]">
-                <div class="h-full bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-tl-full"></div>
+            <!-- Fita Logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/fita-vnua-logo.png"
+                alt="FITA Logo"
+                class="w-full h-full object-contain"
+              />
             </div>
+            <!-- University Name -->
+            <div class="flex flex-col min-w-0">
+              <h1
+                class="text-sm md:text-2xl font-bold tracking-wide leading-tight"
+                data-i18n="header.university"
+              >
+                HỌC VIỆN NÔNG NGHIỆP VIỆT NAM
+              </h1>
+              <h2
+                class="text-xs md:text-lg font-medium text-blue-200 leading-tight"
+                data-i18n="header.faculty"
+              >
+                KHOA CÔNG NGHỆ THÔNG TIN
+              </h2>
+            </div>
+          </div>
+
+          <!-- UCK TEAM section -->
+          <div class="flex items-center space-x-2 md:space-x-3">
+            <!-- UCK TEAM logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/uck-team-logo.png"
+                alt="UCK Team Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <!-- UCK TEAM text -->
+            <div class="text-left md:text-right">
+              <h3 class="text-lg md:text-2xl font-bold text-white">UCK TEAM</h3>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Green and Yellow bottom section -->
+      <div class="h-4 relative">
+        <!-- Yellow line on bottom -->
+        <div class="absolute bottom-0 right-0 h-4 w-[70%]">
+          <div
+            class="h-full bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-tl-full"
+          ></div>
+        </div>
+      </div>
     </header>
 
     <!-- Green line outside header -->
     <div class="h-4 w-[30.5%]">
-        <div class="h-full bg-gradient-to-r from-green-300 to-green-400 rounded-br-full"></div>
+      <div
+        class="h-full bg-gradient-to-r from-green-300 to-green-400 rounded-br-full"
+      ></div>
     </div>
 
     <!-- Navigation Menu -->
     <!-- Navigation Menu -->
     <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo hoặc Brand (tùy chọn) -->
-                <div class="flex items-center">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo hoặc Brand (tùy chọn) -->
+          <div class="flex items-center"></div>
 
-                </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center justify-center flex-1">
+            <ul class="flex space-x-8 py-6">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.introduction"
+                >
+                  Giới thiệu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.projects"
+                >
+                  Dự án
+                </a>
+              </li>
+              <li>
+                <a
+                  href="collaborations.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.collaborations"
+                >
+                  Hợp tác
+                </a>
+              </li>
+              <li>
+                <a
+                  href="achievements.html"
+                  class="text-teal-600 hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.achievements"
+                >
+                  Thành tựu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.gallery"
+                >
+                  Hoạt động
+                </a>
+              </li>
+              <li>
+                <a
+                  href="policy.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.policy"
+                >
+                  Chính sách
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center justify-center flex-1">
-                    <ul class="flex space-x-8 py-6">
-                        <li>
-                            <a href="index.html"
-                                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                                data-i18n="nav.introduction">
-                                Giới thiệu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="projects.html"
-                                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                                data-i18n="nav.projects">
-                                Dự án
-                            </a>
-                        </li>
-                        <li>
-                            <a href="collaborations.html"
-                                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                                data-i18n="nav.collaborations">
-                                Hợp tác
-                            </a>
-                        </li>
-                        <li>
-                            <a href="achievements.html"
-                                class="text-teal-600 hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                                data-i18n="nav.achievements">
-                                Thành tựu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="gallery.html"
-                                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                                data-i18n="nav.gallery">
-                                Hoạt động
-                            </a>
-                        </li>
-                        <li>
-                            <a href="policy.html"
-                                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                                data-i18n="nav.policy">
-                                Chính sách
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button"
-                    class="md:hidden flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200">
-                    <svg id="hamburger-icon" class="fill-current h-3 w-3" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                    <svg id="close-icon" class="fill-current h-3 w-3 hidden" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>Close</title>
-                        <path
-                            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-                    </svg>
-                </button>
-            </div>
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200"
+          >
+            <svg
+              id="hamburger-icon"
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+            <svg
+              id="close-icon"
+              class="fill-current h-3 w-3 hidden"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Close</title>
+              <path
+                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+              />
+            </svg>
+          </button>
         </div>
+      </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu"
-            class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
-            <div class="flex flex-col h-full">
-                <!-- Mobile Menu Header -->
-                <div class="flex items-center justify-between p-4 border-b">
-                    <span class="text-xl font-bold text-teal-600">Menu</span>
-                    <button id="close-menu-button"
-                        class="flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-                        </svg>
-                    </button>
-                </div>
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+      >
+        <div class="flex flex-col h-full">
+          <!-- Mobile Menu Header -->
+          <div class="flex items-center justify-between p-4 border-b">
+            <span class="text-xl font-bold text-teal-600">Menu</span>
+            <button
+              id="close-menu-button"
+              class="flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200"
+            >
+              <svg
+                class="fill-current h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+                />
+              </svg>
+            </button>
+          </div>
 
-                <!-- Mobile Menu Items -->
-                <div class="flex-1 overflow-y-auto">
-                    <ul class="flex flex-col space-y-2 p-4">
-                        <li>
-                            <a href="index.html"
-                                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                                data-i18n="nav.introduction">
-                                Giới thiệu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="projects.html"
-                                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                                data-i18n="nav.projects">
-                                Dự án
-                            </a>
-                        </li>
-                        <li>
-                            <a href="collaborations.html"
-                                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                                data-i18n="nav.collaborations">
-                                Hợp tác
-                            </a>
-                        </li>
-                        <li>
-                            <a href="achievements.html"
-                                class="block text-teal-600 hover:text-teal-800 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                                data-i18n="nav.achievements">
-                                Thành tựu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="gallery.html"
-                                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                                data-i18n="nav.gallery">
-                                Hoạt động
-                            </a>
-                        </li>
-                        <li>
-                            <a href="policy.html"
-                                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                                data-i18n="nav.policy">
-                                Chính sách
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          <!-- Mobile Menu Items -->
+          <div class="flex-1 overflow-y-auto">
+            <ul class="flex flex-col space-y-2 p-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.introduction"
+                >
+                  Giới thiệu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.projects"
+                >
+                  Dự án
+                </a>
+              </li>
+              <li>
+                <a
+                  href="collaborations.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.collaborations"
+                >
+                  Hợp tác
+                </a>
+              </li>
+              <li>
+                <a
+                  href="achievements.html"
+                  class="block text-teal-600 hover:text-teal-800 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.achievements"
+                >
+                  Thành tựu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.gallery"
+                >
+                  Hoạt động
+                </a>
+              </li>
+              <li>
+                <a
+                  href="policy.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.policy"
+                >
+                  Chính sách
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
-    <section class="bg-slate-50  pt-12 px-6" data-aos="fade-up">
-        <div class="container mx-auto text-center">
-            <div class="flex justify-center items-center mb-6" data-aos="zoom-in" data-aos-delay="200">
-                <div class="bg-yellow-500 p-4 rounded-2xl shadow-lg">
-                    <i data-lucide="trophy" class="w-12 h-12 text-white"></i>
-                </div>
-            </div>
-            <h2 class="text-4xl md:text-6xl font-bold pb-6 bg-gradient-to-r from-yellow-500 to-teal-600 bg-clip-text text-transparent"
-                data-aos="fade-up" data-aos-delay="400" data-i18n="achievements.title">
-                Các Thành Tựu, Kết Quả Nghiên Cứu
-            </h2>
-            <p class="text-xl text-gray-500 max-w-5xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="600"
-                data-i18n="achievements.description">
-                Dưới đây là các thành tựu, kết quả nghiên cứu mà nhóm đã đạt được trong quá trình hoạt động
-            </p>
+    <section class="bg-slate-50 pt-12 px-6" data-aos="fade-up">
+      <div class="container mx-auto text-center">
+        <div
+          class="flex justify-center items-center mb-6"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="bg-yellow-400 p-4 rounded-2xl shadow-lg">
+            <i data-lucide="trophy" class="w-12 h-12 text-white"></i>
+          </div>
         </div>
+        <h2
+          class="text-4xl md:text-6xl font-bold pb-6 bg-gradient-to-r from-yellow-500 to-teal-600 bg-clip-text text-transparent"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-i18n="achievements.title"
+        >
+          Các Thành Tựu, Kết Quả Nghiên Cứu
+        </h2>
+        <p
+          class="text-xl text-gray-500 max-w-5xl mx-auto leading-relaxed"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-i18n="achievements.description"
+        >
+          Dưới đây là các thành tựu, kết quả nghiên cứu mà nhóm đã đạt được
+          trong quá trình hoạt động
+        </p>
+      </div>
     </section>
 
     <section class="bg-slate-50 min-h-screen">
-        <!-- Hero Section -->
-        <div class="container mx-auto px-6 py-16">
-            <!-- Statistics Overview -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-800 mb-2">20+</h3>
-                    <p class="text-gray-600" data-i18n="achievements.talented_members">Thành viên tài năng</p>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="code" class="w-8 h-8 text-green-600"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-800 mb-2">10+</h3>
-                    <p class="text-gray-600" data-i18n="achievements.completed_projects">Dự án hoàn thành</p>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="award" class="w-8 h-8 text-purple-600"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-800 mb-2">3+</h3>
-                    <p class="text-gray-600" data-i18n="achievements.outstanding_achievements">Thành tựu nổi bật</p>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="book-open" class="w-8 h-8 text-orange-600"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-800 mb-2">3+</h3>
-                    <p class="text-gray-600" data-i18n="achievements.scientific_publications">Xuất bản khoa học</p>
-                </div>
+      <!-- Hero Section -->
+      <div class="container mx-auto px-6 py-16">
+        <!-- Statistics Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
             </div>
-
-            <!-- Major Achievements -->
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up"
-                    data-i18n="achievements.major_title">Thành Tựu Nổi Bật</h2>
-
-                <div class="space-y-8">
-                    <!-- Achievement 1 -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8" data-aos="fade-right">
-                        <div class="flex flex-col lg:flex-row items-center gap-8">
-                            <div class="bg-gradient-to-br from-yellow-400 to-amber-600 p-6 rounded-2xl">
-                                <i data-lucide="medal" class="w-12 h-12 text-white"></i>
-                            </div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-bold text-gray-800 mb-3"
-                                    data-i18n="achievements.achievement1_title">Đại diện khoa tham gia cuộc thi Nghiên
-                                    cứu khoa học
-                                    cấp Khoa năm 2025</h3>
-                                <p class="text-gray-600 mb-4" data-i18n="achievements.achievement1_desc">Đại diện khoa
-                                    tham gia cuộc thi Nghiên cứu khoa học cấp
-                                    Học viện năm
-                                    2025
-                                    với website kênh thông tin dịch vụ VNUA Services tích hợp thành công thanh toán thực
-                                    với VietQR và vận dụng mô hình trí tuệ nhân tạo Gemini vào xây dựng Chatbot hỗ trợ
-                                    người dùng.</p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_website">Website</span>
-                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_qr_payment">Thanh
-                                        toán trực tuyến quét mã QR</span>
-                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_ai">Trí
-                                        tuệ nhân tạo</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Achievement 2 -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8" data-aos="fade-left">
-                        <div class="flex flex-col lg:flex-row items-center gap-8">
-                            <div class="bg-gradient-to-br from-green-500 to-green-700 p-6 rounded-2xl">
-                                <i data-lucide="rocket" class="w-12 h-12 text-white"></i>
-                            </div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-bold text-gray-800 mb-3"
-                                    data-i18n="achievements.achievement2_title">Phát triển thành công các chức năng
-                                    mới cho Website công ty giáo dục EduStar</h3>
-                                <p class="text-gray-600 mb-4" data-i18n="achievements.achievement2_desc">Phát triển
-                                    thành công các chức năng mới cho Website công
-                                    ty giáo dục EduStar và áp dụng trí tuệ nhân tạo hỗ trợ người dùng sinh bài viết
-                                    chuẩn SEO.</p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_website">Website</span>
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_ai">Trí
-                                        tuệ nhân tạo</span>
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_seo">SEO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Achievement 3 -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8" data-aos="fade-right">
-                        <div class="flex flex-col lg:flex-row items-center gap-8">
-                            <div class="bg-gradient-to-br from-purple-500 to-purple-700 p-6 rounded-2xl">
-                                <i data-lucide="bot" class="w-12 h-12 text-white"></i>
-                            </div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-bold text-gray-800 mb-3"
-                                    data-i18n="achievements.achievement3_title">Fine-tuning Chatbot VNUA Services với
-                                    mô hình trí tuệ nhân tạo Gemini</h3>
-                                <p class="text-gray-600 mb-4" data-i18n="achievements.achievement3_desc">Fine-tuning
-                                    Chatbot VNUA Services qua sử dụng API Key của
-                                    mô hình trí tuệ nhân tạo Gemini kết hợp truy vấn MySQL.</p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span
-                                        class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_chatbot">Chatbot</span>
-                                    <span
-                                        class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_gemini">Gemini</span>
-                                    <span
-                                        class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"
-                                        data-i18n="achievements.tag_mysql">MySQL</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="text-3xl font-bold text-gray-800 mb-2">20+</h3>
+            <p class="text-gray-600" data-i18n="achievements.talented_members">
+              Thành viên tài năng
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-lucide="code" class="w-8 h-8 text-green-600"></i>
             </div>
-
-            <!-- Research Areas -->
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up"
-                    data-i18n="achievements.research_areas">Lĩnh Vực Nghiên Cứu</h2>
-
-                <!-- Research Areas -->
-                <div class="max-w-7xl mx-auto">
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-delay="100">
-                            <div class="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="app-window" class="w-8 h-8 text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3" data-i18n="research.website.title">Phát
-                                triển Website</h3>
-                            <p class="text-gray-600" data-i18n="research.website.desc">Phát triển Website với Frameworks
-                                hiện đại và mạnh mẽ: SpringBoot, NodeJS, ReactJS, Vue.js,...</p>
-                        </div>
-
-                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-delay="200">
-                            <div class="bg-green-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="smartphone" class="w-8 h-8 text-green-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3" data-i18n="research.mobile.title">Ứng dụng
-                                di động</h3>
-                            <p class="text-gray-600" data-i18n="research.mobile.desc">Phát triển ứng dụng di động đa nền
-                                tảng với công nghệ React Native, Dart/Flutter, Kotlin,...</p>
-                        </div>
-
-                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-delay="300">
-                            <div class="bg-purple-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="monitor" class="w-8 h-8 text-purple-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3" data-i18n="research.desktop.title">Ứng dụng
-                                Desktop</h3>
-                            <p class="text-gray-600" data-i18n="research.desktop.desc">Xây dựng ứng dụng Desktop có tính
-                                bảo mật cao với Electron, JavaFX.</p>
-                        </div>
-
-                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-delay="400">
-                            <div class="bg-orange-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="bot" class="w-8 h-8 text-orange-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3" data-i18n="research.ai.title">Trí tuệ nhân
-                                tạo</h3>
-                            <p class="text-gray-600" data-i18n="research.ai.desc">Nghiên cứu xây dựng các ứng dụng của
-                                trí tuệ nhân áp dụng vào phát triển phần mềm.</p>
-                        </div>
-
-                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-delay="500">
-                            <div class="bg-red-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="languages" class="w-8 h-8 text-red-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3" data-i18n="research.nlp.title">Xử lý ngôn
-                                ngữ tự nhiên</h3>
-                            <p class="text-gray-600" data-i18n="research.nlp.desc">Nghiên cứu các phương pháp xử lý các
-                                bài toán về Xử lý ngôn ngữ tự nhiên (NLP).</p>
-                        </div>
-
-                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-delay="600">
-                            <div class="bg-indigo-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
-                                <i data-lucide="brain-circuit" class="w-8 h-8 text-indigo-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3" data-i18n="research.ml.title">Học máy</h3>
-                            <p class="text-gray-600" data-i18n="research.ml.desc">Huấn luyện các mô hình trí tuệ nhân
-                                tạo lớn(LLMs) với các kỹ thuật như Fine-tuning hay RAG.</p>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="text-3xl font-bold text-gray-800 mb-2">10+</h3>
+            <p
+              class="text-gray-600"
+              data-i18n="achievements.completed_projects"
+            >
+              Dự án hoàn thành
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-lucide="award" class="w-8 h-8 text-purple-600"></i>
             </div>
-
-
-
-            <!-- Publications -->
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up"
-                    data-i18n="achievements.publications">Xuất Bản Khoa Học</h2>
-
-                <div class="bg-white rounded-2xl shadow-xl p-4 md:p-8" data-aos="fade-up">
-                    <div class="space-y-4 md:space-y-6">
-                        <div
-                            class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-3 md:p-4 bg-gray-50 rounded-lg">
-                            <div class="bg-blue-100 p-2 rounded-lg flex-shrink-0 w-fit">
-                                <i data-lucide="file-text" class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h4 class="font-bold text-gray-800 mb-1 text-sm sm:text-base break-words"
-                                    data-i18n="achievements.publication1_title">
-                                    Báo cáo khoa học - Ecourse - Website bán khóa học lập trình
-                                </h4>
-                                <p class="text-gray-600 text-xs sm:text-sm mb-2 break-words"
-                                    data-i18n="achievements.publication1_type">
-                                    Khóa luận tốt nghiệp - khoa Công nghệ phần mềm - 2024
-                                </p>
-                                <p class="text-gray-500 text-xs sm:text-sm break-words">
-                                    <span data-i18n="achievements.score">Điểm:</span> 8.5 |
-                                    <span data-i18n="achievements.author">Tác giả:</span>
-                                    <span data-i18n="achievements.author1_name">Dang Vu Hiep</span>
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0 mt-2 sm:mt-0">
-                                <a href="assets/file/651836_DangVuHiep_K65CNTTB_KLTN.docx" download="Ecourse.docx"
-                                    class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 text-xs sm:text-sm font-medium w-full sm:w-auto justify-center">
-                                    <i data-lucide="download" class="w-3 h-3 sm:w-4 sm:h-4"></i>
-                                    <span data-i18n="achievements.download">Tải về</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div
-                            class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-3 md:p-4 bg-gray-50 rounded-lg">
-                            <div class="bg-green-100 p-2 rounded-lg flex-shrink-0 w-fit">
-                                <i data-lucide="file-text" class="w-5 h-5 sm:w-6 sm:h-6 text-green-600"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h4 class="font-bold text-gray-800 mb-1 text-sm sm:text-base break-words"
-                                    data-i18n="achievements.publication2_title">
-                                    Thuyết minh Nghiên cứu khoa học - VNUA Services - Website kênh thông tin dịch vụ khu
-                                    vực Học viện Nông nghiệp Việt Nam
-                                </h4>
-                                <p class="text-gray-600 text-xs sm:text-sm mb-2 break-words"
-                                    data-i18n="achievements.publication2_type">
-                                    Nghiên cứu khoa học cấp Học viện năm 2025
-                                </p>
-                                <p class="text-gray-500 text-xs sm:text-sm break-words">
-                                    <span data-i18n="achievements.score">Điểm:</span>
-                                    <span data-i18n="achievements.not_available">Chưa có</span> |
-                                    <span data-i18n="achievements.author">Tác giả:</span>
-                                    <span data-i18n="achievements.author2_name">Duong Minh Hieu</span>
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0 mt-2 sm:mt-0">
-                                <a href="assets/file/UCK_TEAM_Thuyết_Minh_NCKH_2025.docx"
-                                    download="UCK_TEAM_Thuyết_Minh_NCKH_2025.docx"
-                                    class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-200 text-xs sm:text-sm font-medium w-full sm:w-auto justify-center">
-                                    <i data-lucide="download" class="w-3 h-3 sm:w-4 sm:h-4"></i>
-                                    <span data-i18n="achievements.download">Tải về</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div
-                            class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-3 md:p-4 bg-gray-50 rounded-lg">
-                            <div class="bg-purple-100 p-2 rounded-lg flex-shrink-0 w-fit">
-                                <i data-lucide="file-text" class="w-5 h-5 sm:w-6 sm:h-6 text-purple-600"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h4 class="font-bold text-gray-800 mb-1 text-sm sm:text-base break-words"
-                                    data-i18n="achievements.publication3_title">
-                                    Báo cáo khoa học - EduStar 2.0 - Nâng cấp chức năng cho Website công ty giáo dục
-                                    EduStar
-                                </h4>
-                                <p class="text-gray-600 text-xs sm:text-sm mb-2 break-words"
-                                    data-i18n="achievements.publication3_type">
-                                    Thực tập chuyên ngành - khoa Công nghệ phần mềm - 2024
-                                </p>
-                                <p class="text-gray-500 text-xs sm:text-sm break-words">
-                                    <span data-i18n="achievements.score">Điểm:</span> 9.4 |
-                                    <span data-i18n="achievements.author">Tác giả:</span>
-                                    <span data-i18n="achievements.author3_names">Duong Minh Hieu, Nguyen Tien Hai, Pham
-                                        Viet Bao Hung, Doan Van Nghiep</span>
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0 mt-2 sm:mt-0">
-                                <a href="assets/file/Update_Edustar.docx" download="Update_Edustar.docx"
-                                    class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors duration-200 text-xs sm:text-sm font-medium w-full sm:w-auto justify-center">
-                                    <i data-lucide="download" class="w-3 h-3 sm:w-4 sm:h-4"></i>
-                                    <span data-i18n="achievements.download">Tải về</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="text-3xl font-bold text-gray-800 mb-2">3+</h3>
+            <p
+              class="text-gray-600"
+              data-i18n="achievements.outstanding_achievements"
+            >
+              Thành tựu nổi bật
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-lucide="book-open" class="w-8 h-8 text-orange-600"></i>
             </div>
-
-            <!-- Call to Action -->
-            <div class="text-center bg-gradient-to-r from-yellow-500 to-teal-500 rounded-2xl p-12 text-white"
-                data-aos="zoom-in">
-                <div class="flex justify-center mb-6">
-                    <i data-lucide="mail" class="w-12 h-12"></i>
-                </div>
-                <h2 class="text-3xl font-bold mb-4" data-i18n="achievements.connect">Kết Nối Với UCK TEAM</h2>
-                <p class="text-xl mb-8 opacity-90" data-i18n="achievements.connect_desc">Hãy cùng chúng tôi tạo nên
-                    những đột phá công nghệ tiếp theo</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="policy.html"
-                        class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-colors duration-300 flex items-center justify-center gap-2">
-                        <i data-lucide="users" class="w-5 h-5"></i>
-                        <span data-i18n="achievements.join_team">Tham Gia Nhóm</span>
-                    </a>
-                    <a href="projects.html"
-                        class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-colors duration-300 flex items-center justify-center gap-2">
-                        <i data-lucide="external-link" class="w-5 h-5"></i>
-                        <span data-i18n="achievements.view_projects">Xem Dự Án</span>
-                    </a>
-                </div>
-            </div>
+            <h3 class="text-3xl font-bold text-gray-800 mb-2">3+</h3>
+            <p
+              class="text-gray-600"
+              data-i18n="achievements.scientific_publications"
+            >
+              Xuất bản khoa học
+            </p>
+          </div>
         </div>
+
+        <!-- Major Achievements -->
+        <div class="mb-16">
+          <h2
+            class="text-3xl font-bold text-center text-gray-800 mb-12"
+            data-aos="fade-up"
+            data-i18n="achievements.major_title"
+          >
+            Thành Tựu Nổi Bật
+          </h2>
+
+          <div class="space-y-8">
+            <!-- Achievement 1 -->
+            <div
+              class="bg-white rounded-2xl shadow-xl p-8"
+              data-aos="fade-right"
+            >
+              <div class="flex flex-col lg:flex-row items-center gap-8">
+                <div
+                  class="bg-gradient-to-br from-yellow-400 to-amber-600 p-6 rounded-2xl"
+                >
+                  <i data-lucide="medal" class="w-12 h-12 text-white"></i>
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="text-2xl font-bold text-gray-800 mb-3"
+                    data-i18n="achievements.achievement1_title"
+                  >
+                    Đại diện khoa tham gia cuộc thi Nghiên cứu khoa học cấp Khoa
+                    năm 2025
+                  </h3>
+                  <p
+                    class="text-gray-600 mb-4"
+                    data-i18n="achievements.achievement1_desc"
+                  >
+                    Đại diện khoa tham gia cuộc thi Nghiên cứu khoa học cấp Học
+                    viện năm 2025 với website kênh thông tin dịch vụ VNUA
+                    Services tích hợp thành công thanh toán thực với VietQR và
+                    vận dụng mô hình trí tuệ nhân tạo Gemini vào xây dựng
+                    Chatbot hỗ trợ người dùng.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_website"
+                      >Website</span
+                    >
+                    <span
+                      class="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_qr_payment"
+                      >Thanh toán trực tuyến quét mã QR</span
+                    >
+                    <span
+                      class="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_ai"
+                      >Trí tuệ nhân tạo</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Achievement 2 -->
+            <div
+              class="bg-white rounded-2xl shadow-xl p-8"
+              data-aos="fade-left"
+            >
+              <div class="flex flex-col lg:flex-row items-center gap-8">
+                <div
+                  class="bg-gradient-to-br from-green-500 to-green-700 p-6 rounded-2xl"
+                >
+                  <i data-lucide="rocket" class="w-12 h-12 text-white"></i>
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="text-2xl font-bold text-gray-800 mb-3"
+                    data-i18n="achievements.achievement2_title"
+                  >
+                    Phát triển thành công các chức năng mới cho Website công ty
+                    giáo dục EduStar
+                  </h3>
+                  <p
+                    class="text-gray-600 mb-4"
+                    data-i18n="achievements.achievement2_desc"
+                  >
+                    Phát triển thành công các chức năng mới cho Website công ty
+                    giáo dục EduStar và áp dụng trí tuệ nhân tạo hỗ trợ người
+                    dùng sinh bài viết chuẩn SEO.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_website"
+                      >Website</span
+                    >
+                    <span
+                      class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_ai"
+                      >Trí tuệ nhân tạo</span
+                    >
+                    <span
+                      class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_seo"
+                      >SEO</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Achievement 3 -->
+            <div
+              class="bg-white rounded-2xl shadow-xl p-8"
+              data-aos="fade-right"
+            >
+              <div class="flex flex-col lg:flex-row items-center gap-8">
+                <div
+                  class="bg-gradient-to-br from-purple-500 to-purple-700 p-6 rounded-2xl"
+                >
+                  <i data-lucide="bot" class="w-12 h-12 text-white"></i>
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="text-2xl font-bold text-gray-800 mb-3"
+                    data-i18n="achievements.achievement3_title"
+                  >
+                    Fine-tuning Chatbot VNUA Services với mô hình trí tuệ nhân
+                    tạo Gemini
+                  </h3>
+                  <p
+                    class="text-gray-600 mb-4"
+                    data-i18n="achievements.achievement3_desc"
+                  >
+                    Fine-tuning Chatbot VNUA Services qua sử dụng API Key của mô
+                    hình trí tuệ nhân tạo Gemini kết hợp truy vấn MySQL.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_chatbot"
+                      >Chatbot</span
+                    >
+                    <span
+                      class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_gemini"
+                      >Gemini</span
+                    >
+                    <span
+                      class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"
+                      data-i18n="achievements.tag_mysql"
+                      >MySQL</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Areas -->
+        <div class="mb-16">
+          <h2
+            class="text-3xl font-bold text-center text-gray-800 mb-12"
+            data-aos="fade-up"
+            data-i18n="achievements.research_areas"
+          >
+            Lĩnh Vực Nghiên Cứu
+          </h2>
+
+          <!-- Research Areas -->
+          <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div
+                class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <div
+                  class="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4"
+                >
+                  <i data-lucide="app-window" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-3"
+                  data-i18n="research.website.title"
+                >
+                  Phát triển Website
+                </h3>
+                <p class="text-gray-600" data-i18n="research.website.desc">
+                  Phát triển Website với Frameworks hiện đại và mạnh mẽ:
+                  SpringBoot, NodeJS, ReactJS, Vue.js,...
+                </p>
+              </div>
+
+              <div
+                class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <div
+                  class="bg-green-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4"
+                >
+                  <i
+                    data-lucide="smartphone"
+                    class="w-8 h-8 text-green-600"
+                  ></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-3"
+                  data-i18n="research.mobile.title"
+                >
+                  Ứng dụng di động
+                </h3>
+                <p class="text-gray-600" data-i18n="research.mobile.desc">
+                  Phát triển ứng dụng di động đa nền tảng với công nghệ React
+                  Native, Dart/Flutter, Kotlin,...
+                </p>
+              </div>
+
+              <div
+                class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <div
+                  class="bg-purple-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4"
+                >
+                  <i data-lucide="monitor" class="w-8 h-8 text-purple-600"></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-3"
+                  data-i18n="research.desktop.title"
+                >
+                  Ứng dụng Desktop
+                </h3>
+                <p class="text-gray-600" data-i18n="research.desktop.desc">
+                  Xây dựng ứng dụng Desktop có tính bảo mật cao với Electron,
+                  JavaFX.
+                </p>
+              </div>
+
+              <div
+                class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <div
+                  class="bg-orange-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4"
+                >
+                  <i data-lucide="bot" class="w-8 h-8 text-orange-600"></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-3"
+                  data-i18n="research.ai.title"
+                >
+                  Trí tuệ nhân tạo
+                </h3>
+                <p class="text-gray-600" data-i18n="research.ai.desc">
+                  Nghiên cứu xây dựng các ứng dụng của trí tuệ nhân áp dụng vào
+                  phát triển phần mềm.
+                </p>
+              </div>
+
+              <div
+                class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <div
+                  class="bg-red-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4"
+                >
+                  <i data-lucide="languages" class="w-8 h-8 text-red-600"></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-3"
+                  data-i18n="research.nlp.title"
+                >
+                  Xử lý ngôn ngữ tự nhiên
+                </h3>
+                <p class="text-gray-600" data-i18n="research.nlp.desc">
+                  Nghiên cứu các phương pháp xử lý các bài toán về Xử lý ngôn
+                  ngữ tự nhiên (NLP).
+                </p>
+              </div>
+
+              <div
+                class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <div
+                  class="bg-indigo-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4"
+                >
+                  <i
+                    data-lucide="brain-circuit"
+                    class="w-8 h-8 text-indigo-600"
+                  ></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-3"
+                  data-i18n="research.ml.title"
+                >
+                  Học máy
+                </h3>
+                <p class="text-gray-600" data-i18n="research.ml.desc">
+                  Huấn luyện các mô hình trí tuệ nhân tạo lớn(LLMs) với các kỹ
+                  thuật như Fine-tuning hay RAG.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publications -->
+        <div class="mb-16">
+          <h2
+            class="text-3xl font-bold text-center text-gray-800 mb-12"
+            data-aos="fade-up"
+            data-i18n="achievements.publications"
+          >
+            Xuất Bản Khoa Học
+          </h2>
+
+          <div
+            class="bg-white rounded-2xl shadow-xl p-4 md:p-8"
+            data-aos="fade-up"
+          >
+            <div class="space-y-4 md:space-y-6">
+              <div
+                class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-3 md:p-4 bg-gray-50 rounded-lg"
+              >
+                <div class="bg-blue-100 p-2 rounded-lg flex-shrink-0 w-fit">
+                  <i
+                    data-lucide="file-text"
+                    class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600"
+                  ></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h4
+                    class="font-bold text-gray-800 mb-1 text-sm sm:text-base break-words"
+                    data-i18n="achievements.publication1_title"
+                  >
+                    Báo cáo khoa học - Ecourse - Website bán khóa học lập trình
+                  </h4>
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm mb-2 break-words"
+                    data-i18n="achievements.publication1_type"
+                  >
+                    Khóa luận tốt nghiệp - khoa Công nghệ phần mềm - 2024
+                  </p>
+                  <p class="text-gray-500 text-xs sm:text-sm break-words">
+                    <span data-i18n="achievements.score">Điểm:</span> 8.5 |
+                    <span data-i18n="achievements.author">Tác giả:</span>
+                    <span data-i18n="achievements.author1_name"
+                      >Dang Vu Hiep</span
+                    >
+                  </p>
+                </div>
+                <div class="flex-shrink-0 mt-2 sm:mt-0">
+                  <a
+                    href="assets/file/651836_DangVuHiep_K65CNTTB_KLTN.docx"
+                    download="Ecourse.docx"
+                    class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 text-xs sm:text-sm font-medium w-full sm:w-auto justify-center"
+                  >
+                    <i data-lucide="download" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                    <span data-i18n="achievements.download">Tải về</span>
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-3 md:p-4 bg-gray-50 rounded-lg"
+              >
+                <div class="bg-green-100 p-2 rounded-lg flex-shrink-0 w-fit">
+                  <i
+                    data-lucide="file-text"
+                    class="w-5 h-5 sm:w-6 sm:h-6 text-green-600"
+                  ></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h4
+                    class="font-bold text-gray-800 mb-1 text-sm sm:text-base break-words"
+                    data-i18n="achievements.publication2_title"
+                  >
+                    Thuyết minh Nghiên cứu khoa học - VNUA Services - Website
+                    kênh thông tin dịch vụ khu vực Học viện Nông nghiệp Việt Nam
+                  </h4>
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm mb-2 break-words"
+                    data-i18n="achievements.publication2_type"
+                  >
+                    Nghiên cứu khoa học cấp Học viện năm 2025
+                  </p>
+                  <p class="text-gray-500 text-xs sm:text-sm break-words">
+                    <span data-i18n="achievements.score">Điểm:</span>
+                    <span data-i18n="achievements.not_available">Chưa có</span>
+                    |
+                    <span data-i18n="achievements.author">Tác giả:</span>
+                    <span data-i18n="achievements.author2_name"
+                      >Duong Minh Hieu</span
+                    >
+                  </p>
+                </div>
+                <div class="flex-shrink-0 mt-2 sm:mt-0">
+                  <a
+                    href="assets/file/UCK_TEAM_Thuyết_Minh_NCKH_2025.docx"
+                    download="UCK_TEAM_Thuyết_Minh_NCKH_2025.docx"
+                    class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-200 text-xs sm:text-sm font-medium w-full sm:w-auto justify-center"
+                  >
+                    <i data-lucide="download" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                    <span data-i18n="achievements.download">Tải về</span>
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-3 md:p-4 bg-gray-50 rounded-lg"
+              >
+                <div class="bg-purple-100 p-2 rounded-lg flex-shrink-0 w-fit">
+                  <i
+                    data-lucide="file-text"
+                    class="w-5 h-5 sm:w-6 sm:h-6 text-purple-600"
+                  ></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h4
+                    class="font-bold text-gray-800 mb-1 text-sm sm:text-base break-words"
+                    data-i18n="achievements.publication3_title"
+                  >
+                    Báo cáo khoa học - EduStar 2.0 - Nâng cấp chức năng cho
+                    Website công ty giáo dục EduStar
+                  </h4>
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm mb-2 break-words"
+                    data-i18n="achievements.publication3_type"
+                  >
+                    Thực tập chuyên ngành - khoa Công nghệ phần mềm - 2024
+                  </p>
+                  <p class="text-gray-500 text-xs sm:text-sm break-words">
+                    <span data-i18n="achievements.score">Điểm:</span> 9.4 |
+                    <span data-i18n="achievements.author">Tác giả:</span>
+                    <span data-i18n="achievements.author3_names"
+                      >Duong Minh Hieu, Nguyen Tien Hai, Pham Viet Bao Hung,
+                      Doan Van Nghiep</span
+                    >
+                  </p>
+                </div>
+                <div class="flex-shrink-0 mt-2 sm:mt-0">
+                  <a
+                    href="assets/file/Update_Edustar.docx"
+                    download="Update_Edustar.docx"
+                    class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors duration-200 text-xs sm:text-sm font-medium w-full sm:w-auto justify-center"
+                  >
+                    <i data-lucide="download" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                    <span data-i18n="achievements.download">Tải về</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div
+          class="text-center bg-gradient-to-r from-yellow-500 to-teal-500 rounded-2xl p-12 text-white"
+          data-aos="zoom-in"
+        >
+          <div class="flex justify-center mb-6">
+            <i data-lucide="mail" class="w-12 h-12"></i>
+          </div>
+          <h2 class="text-3xl font-bold mb-4" data-i18n="achievements.connect">
+            Kết Nối Với UCK TEAM
+          </h2>
+          <p
+            class="text-xl mb-8 opacity-90"
+            data-i18n="achievements.connect_desc"
+          >
+            Hãy cùng chúng tôi tạo nên những đột phá công nghệ tiếp theo
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="policy.html"
+              class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-colors duration-300 flex items-center justify-center gap-2"
+            >
+              <i data-lucide="users" class="w-5 h-5"></i>
+              <span data-i18n="achievements.join_team">Tham Gia Nhóm</span>
+            </a>
+            <a
+              href="projects.html"
+              class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-colors duration-300 flex items-center justify-center gap-2"
+            >
+              <i data-lucide="external-link" class="w-5 h-5"></i>
+              <span data-i18n="achievements.view_projects">Xem Dự Án</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="bg-gray-900 text-white py-6">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex flex-col lg:flex-row justify-between items-start ">
-                <!-- Left side -->
-                <div class="space-y-6 flex-1">
-                    <!-- Logo and Team Name -->
-                    <div class="flex items-center space-x-4">
-                        <img src="assets/uck-team-logo.png" alt="UCK Team Logo" class="w-20 h-20 object-contain">
-                        <h3 class="text-2xl font-bold text-white">UCK TEAM</h3>
-                    </div>
-
-                    <!-- Description -->
-                    <div class="text-gray-300 leading-relaxed max-w-3xl">
-                        <p class="text-justify text-lg" data-i18n="footer.description">UCK Team là đội ngũ nghiên cứu và
-                            phát triển
-                            công nghệ thông tin tại Học viện Nông nghiệp Việt Nam. Chúng tôi chuyên về phát triển các
-                            giải pháp công
-                            nghệ hiện đại, ứng dụng trí tuệ nhân tạo và khoa học dữ liệu trong nông nghiệp. Với kinh
-                            nghiệm và đam mê,
-                            UCK Team cam kết mang đến những sản phẩm chất lượng cao, góp phần thúc đẩy sự phát triển của
-                            ngành nông
-                            nghiệp thông minh và bền vững tại Việt Nam.</p>
-                    </div>
-                </div>
-
-                <!-- Right side -->
-                <div class="lg:text-right">
-                    <h4 class="text-2xl font-semibold text-white mb-4" data-i18n="footer.sitemap">Sơ đồ Website</h4>
-                    <nav class="space-y-3">
-                        <a href="index.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-                            data-i18n="nav.introduction">
-                            Giới thiệu
-                        </a>
-                        <a href="projects.html"
-                            class="block text-gray-300 hover:text-white transition-colors duration-300"
-                            data-i18n="nav.projects">
-                            Dự án
-                        </a>
-                        <a href="collaborations.html"
-                            class="block text-gray-300 hover:text-white transition-colors duration-300"
-                            data-i18n="nav.collaborations">
-                            Hợp tác
-                        </a>
-                        <a href="achievements.html"
-                            class="block text-gray-300 hover:text-white transition-colors duration-300"
-                            data-i18n="nav.achievements">
-                            Thành tựu
-                        </a>
-                        <a href="gallery.html"
-                            class="block text-gray-300 hover:text-white transition-colors duration-300"
-                            data-i18n="nav.gallery">
-                            Hoạt động
-                        </a>
-                        <a href="policy.html"
-                            class="block text-gray-300 hover:text-white transition-colors duration-300"
-                            data-i18n="nav.policy">
-                            Chính sách
-                        </a>
-                    </nav>
-                </div>
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row justify-between items-start">
+          <!-- Left side -->
+          <div class="space-y-6 flex-1">
+            <!-- Logo and Team Name -->
+            <div class="flex items-center space-x-4">
+              <img
+                src="assets/uck-team-logo.png"
+                alt="UCK Team Logo"
+                class="w-20 h-20 object-contain"
+              />
+              <h3 class="text-2xl font-bold text-white">UCK TEAM</h3>
             </div>
 
-            <!-- Copyright - Moved to bottom and centered -->
-            <div class="pt-6 border-t border-gray-800 mt-6 text-center">
-                <p class="text-gray-400 text-lg" data-i18n="footer.copyright">Copyright © UCK TEAM</p>
+            <!-- Description -->
+            <div class="text-gray-300 leading-relaxed max-w-3xl">
+              <p class="text-justify text-lg" data-i18n="footer.description">
+                UCK Team là đội ngũ nghiên cứu và phát triển công nghệ thông tin
+                tại Học viện Nông nghiệp Việt Nam. Chúng tôi chuyên về phát
+                triển các giải pháp công nghệ hiện đại, ứng dụng trí tuệ nhân
+                tạo và khoa học dữ liệu trong nông nghiệp. Với kinh nghiệm và
+                đam mê, UCK Team cam kết mang đến những sản phẩm chất lượng cao,
+                góp phần thúc đẩy sự phát triển của ngành nông nghiệp thông minh
+                và bền vững tại Việt Nam.
+              </p>
             </div>
+          </div>
+
+          <!-- Right side -->
+          <div class="lg:text-right">
+            <h4
+              class="text-2xl font-semibold text-white mb-4"
+              data-i18n="footer.sitemap"
+            >
+              Sơ đồ Website
+            </h4>
+            <nav class="space-y-3">
+              <a
+                href="index.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.introduction"
+              >
+                Giới thiệu
+              </a>
+              <a
+                href="projects.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.projects"
+              >
+                Dự án
+              </a>
+              <a
+                href="collaborations.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.collaborations"
+              >
+                Hợp tác
+              </a>
+              <a
+                href="achievements.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.achievements"
+              >
+                Thành tựu
+              </a>
+              <a
+                href="gallery.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.gallery"
+              >
+                Hoạt động
+              </a>
+              <a
+                href="policy.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.policy"
+              >
+                Chính sách
+              </a>
+            </nav>
+          </div>
         </div>
+
+        <!-- Copyright - Moved to bottom and centered -->
+        <div class="pt-6 border-t border-gray-800 mt-6 text-center">
+          <p class="text-gray-400 text-lg" data-i18n="footer.copyright">
+            Copyright © UCK TEAM
+          </p>
+        </div>
+      </div>
     </footer>
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1600,
-            easing: 'ease-in-out',
-            once: false,
-            mirror: false
+      // Initialize AOS
+      AOS.init({
+        duration: 1600,
+        easing: "ease-in-out",
+        once: false,
+        mirror: false,
+      });
+
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Add smooth scrolling and interaction effects
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add hover effects to achievement cards
+        const achievementCards = document.querySelectorAll(
+          ".bg-white.rounded-2xl.shadow-xl"
+        );
+        achievementCards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-5px)";
+            this.style.transition = "transform 0.3s ease";
+          });
+          card.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+          });
         });
 
-        // Initialize Lucide icons
-        lucide.createIcons();
+        // Add counter animation for statistics
+        const counters = document.querySelectorAll(".text-3xl.font-bold");
+        const observerOptions = {
+          threshold: 0.5,
+          rootMargin: "0px 0px -100px 0px",
+        };
 
-        // Add smooth scrolling and interaction effects
-        document.addEventListener('DOMContentLoaded', function () {
-            // Add hover effects to achievement cards
-            const achievementCards = document.querySelectorAll('.bg-white.rounded-2xl.shadow-xl');
-            achievementCards.forEach(card => {
-                card.addEventListener('mouseenter', function () {
-                    this.style.transform = 'translateY(-5px)';
-                    this.style.transition = 'transform 0.3s ease';
-                });
-                card.addEventListener('mouseleave', function () {
-                    this.style.transform = 'translateY(0)';
-                });
-            });
-
-            // Add counter animation for statistics
-            const counters = document.querySelectorAll('.text-3xl.font-bold');
-            const observerOptions = {
-                threshold: 0.5,
-                rootMargin: '0px 0px -100px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const counter = entry.target;
-                        const target = parseInt(counter.textContent.replace('+', ''));
-                        let current = 0;
-                        const increment = target / 50;
-                        const timer = setInterval(() => {
-                            current += increment;
-                            if (current >= target) {
-                                counter.textContent = target + '+';
-                                clearInterval(timer);
-                            } else {
-                                counter.textContent = Math.floor(current) + '+';
-                            }
-                        }, 40);
-                        observer.unobserve(counter);
-                    }
-                });
-            }, observerOptions);
-
-            // Only animate statistics counters
-            const statCounters = document.querySelectorAll('.grid.grid-cols-1.md\\:grid-cols-4 .text-3xl.font-bold');
-            statCounters.forEach(counter => {
-                if (counter.textContent.includes('+')) {
-                    observer.observe(counter);
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const counter = entry.target;
+              const target = parseInt(counter.textContent.replace("+", ""));
+              let current = 0;
+              const increment = target / 50;
+              const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                  counter.textContent = target + "+";
+                  clearInterval(timer);
+                } else {
+                  counter.textContent = Math.floor(current) + "+";
                 }
-            });
+              }, 40);
+              observer.unobserve(counter);
+            }
+          });
+        }, observerOptions);
+
+        // Only animate statistics counters
+        const statCounters = document.querySelectorAll(
+          ".grid.grid-cols-1.md\\:grid-cols-4 .text-3xl.font-bold"
+        );
+        statCounters.forEach((counter) => {
+          if (counter.textContent.includes("+")) {
+            observer.observe(counter);
+          }
         });
+      });
 
-        // Mobile menu functionality
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const closeMenuButton = document.getElementById('close-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const closeMenuButton = document.getElementById("close-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const closeIcon = document.getElementById("close-icon");
 
-        function openMenu() {
-            mobileMenu.classList.remove('translate-x-full');
-            mobileMenu.classList.add('translate-x-0');
-            hamburgerIcon.classList.add('hidden');
-            closeIcon.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
+      function openMenu() {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+        hamburgerIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // Prevent scrolling
+      }
+
+      function closeMenu() {
+        mobileMenu.classList.remove("translate-x-0");
+        mobileMenu.classList.add("translate-x-full");
+        hamburgerIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+        document.body.style.overflow = "auto"; // Restore scrolling
+      }
+
+      // Event listeners
+      mobileMenuButton.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("translate-x-full")) {
+          openMenu();
+        } else {
+          closeMenu();
         }
+      });
 
-        function closeMenu() {
-            mobileMenu.classList.remove('translate-x-0');
-            mobileMenu.classList.add('translate-x-full');
-            hamburgerIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
-            document.body.style.overflow = 'auto'; // Restore scrolling
+      closeMenuButton.addEventListener("click", closeMenu);
+
+      // Close menu when clicking on menu items
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      // Close menu when clicking outside (optional)
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+          closeMenu();
         }
+      });
 
-        // Event listeners
-        mobileMenuButton.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('translate-x-full')) {
-                openMenu();
-            } else {
-                closeMenu();
-            }
-        });
-
-        closeMenuButton.addEventListener('click', closeMenu);
-
-        // Close menu when clicking on menu items
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
-
-        // Close menu when clicking outside (optional)
-        mobileMenu.addEventListener('click', (e) => {
-            if (e.target === mobileMenu) {
-                closeMenu();
-            }
-        });
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            if (window.innerWidth >= 768) { // md breakpoint
-                closeMenu();
-            }
-        });
+      // Handle window resize
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          // md breakpoint
+          closeMenu();
+        }
+      });
     </script>
-</body>
-
+  </body>
 </html>

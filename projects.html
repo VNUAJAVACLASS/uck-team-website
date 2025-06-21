@@ -1,825 +1,1244 @@
 <!DOCTYPE html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietnam National University of Agriculture</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/input.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="js/i18n.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vietnam National University of Agriculture</title>
-  <link rel="stylesheet" href="dist/output.css" />
-  <link rel="stylesheet" href="src/input.css" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="i18n.js"></script>
-</head>
+  <body>
+    <header
+      class="bg-gradient-to-r from-sky-800 via-sky-900 to-sky-950 text-white"
+    >
+      <!-- Top section with logo and title -->
+      <div class="container mx-auto px-4 py-4">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0"
+        >
+          <!-- Logo and University Info -->
+          <div class="flex items-center space-x-2 md:space-x-4">
+            <!-- University Logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/vnua-logo.png"
+                alt="VNUA Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <!-- Fita Logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/fita-vnua-logo.png"
+                alt="FITA Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <!-- University Name -->
+            <div class="flex flex-col min-w-0">
+              <h1
+                class="text-sm md:text-2xl font-bold tracking-wide leading-tight"
+                data-i18n="header.university"
+              >
+                HỌC VIỆN NÔNG NGHIỆP VIỆT NAM
+              </h1>
+              <h2
+                class="text-xs md:text-lg font-medium text-blue-200 leading-tight"
+                data-i18n="header.faculty"
+              >
+                KHOA CÔNG NGHỆ THÔNG TIN
+              </h2>
+            </div>
+          </div>
 
-<body>
-  <header class="bg-gradient-to-r from-sky-800 via-sky-900 to-sky-950 text-white">
-    <!-- Top section with logo and title -->
-    <div class="container mx-auto px-4 py-4">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
-        <!-- Logo and University Info -->
-        <div class="flex items-center space-x-2 md:space-x-4">
-          <!-- University Logo -->
-          <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-            <img src="assets/vnua-logo.png" alt="VNUA Logo" class="w-full h-full object-contain" />
-          </div>
-          <!-- Fita Logo -->
-          <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-            <img src="assets/fita-vnua-logo.png" alt="FITA Logo" class="w-full h-full object-contain" />
-          </div>
-          <!-- University Name -->
-          <div class="flex flex-col min-w-0">
-            <h1 class="text-sm md:text-2xl font-bold tracking-wide leading-tight" data-i18n="header.university">
-              HỌC VIỆN NÔNG NGHIỆP VIỆT NAM
-            </h1>
-            <h2 class="text-xs md:text-lg font-medium text-blue-200 leading-tight" data-i18n="header.faculty">
-              KHOA CÔNG NGHỆ THÔNG TIN
-            </h2>
-          </div>
-        </div>
+          <!-- UCK TEAM section -->
+          <div class="flex items-center space-x-2 md:space-x-3">
+            <!-- UCK TEAM logo -->
+            <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+              <img
+                src="assets/uck-team-logo.png"
+                alt="UCK Team Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
 
-        <!-- UCK TEAM section -->
-        <div class="flex items-center space-x-2 md:space-x-3">
-          <!-- UCK TEAM logo -->
-          <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
-            <img src="assets/uck-team-logo.png" alt="UCK Team Logo" class="w-full h-full object-contain" />
-          </div>
-
-          <!-- UCK TEAM text -->
-          <div class="text-left md:text-right">
-            <h3 class="text-lg md:text-2xl font-bold text-white">UCK TEAM</h3>
+            <!-- UCK TEAM text -->
+            <div class="text-left md:text-right">
+              <h3 class="text-lg md:text-2xl font-bold text-white">UCK TEAM</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Green and Yellow bottom section -->
-    <div class="h-4 relative">
-      <!-- Yellow line on bottom -->
-      <div class="absolute bottom-0 right-0 h-4 w-[70%]">
-        <div class="h-full bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-tl-full"></div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Green line outside header -->
-  <div class="h-4 w-[30.5%]">
-    <div class="h-full bg-gradient-to-r from-green-300 to-green-400 rounded-br-full"></div>
-  </div>
-
-  <!-- Navigation Menu -->
-  <nav class="bg-white shadow-md">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between">
-        <!-- Logo hoặc Brand (tùy chọn) -->
-        <div class="flex items-center">
-
+      <!-- Green and Yellow bottom section -->
+      <div class="h-4 relative">
+        <!-- Yellow line on bottom -->
+        <div class="absolute bottom-0 right-0 h-4 w-[70%]">
+          <div
+            class="h-full bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-tl-full"
+          ></div>
         </div>
-
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center justify-center flex-1">
-          <ul class="flex space-x-8 py-6">
-            <li>
-              <a href="index.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.introduction">
-                Giới thiệu
-              </a>
-            </li>
-            <li>
-              <a href="projects.html"
-                class="text-teal-600 hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.projects">
-                Dự án
-              </a>
-            </li>
-            <li>
-              <a href="collaborations.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.collaborations">
-                Hợp tác
-              </a>
-            </li>
-            <li>
-              <a href="achievements.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.achievements">
-                Thành tựu
-              </a>
-            </li>
-            <li>
-              <a href="gallery.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.gallery">
-                Hoạt động
-              </a>
-            </li>
-            <li>
-              <a href="policy.html"
-                class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
-                data-i18n="nav.policy">
-                Chính sách
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button"
-          class="md:hidden flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200">
-          <svg id="hamburger-icon" class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-          <svg id="close-icon" class="fill-current h-3 w-3 hidden" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <title>Close</title>
-            <path
-              d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-          </svg>
-        </button>
       </div>
+    </header>
+
+    <!-- Green line outside header -->
+    <div class="h-4 w-[30.5%]">
+      <div
+        class="h-full bg-gradient-to-r from-green-300 to-green-400 rounded-br-full"
+      ></div>
     </div>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu"
-      class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
-      <div class="flex flex-col h-full">
-        <!-- Mobile Menu Header -->
-        <div class="flex items-center justify-between p-4 border-b">
-          <span class="text-xl font-bold text-teal-600">Menu</span>
-          <button id="close-menu-button"
-            class="flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <!-- Navigation Menu -->
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo hoặc Brand (tùy chọn) -->
+          <div class="flex items-center"></div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center justify-center flex-1">
+            <ul class="flex space-x-8 py-6">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.introduction"
+                >
+                  Giới thiệu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-teal-600 hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.projects"
+                >
+                  Dự án
+                </a>
+              </li>
+              <li>
+                <a
+                  href="collaborations.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.collaborations"
+                >
+                  Hợp tác
+                </a>
+              </li>
+              <li>
+                <a
+                  href="achievements.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.achievements"
+                >
+                  Thành tựu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.gallery"
+                >
+                  Hoạt động
+                </a>
+              </li>
+              <li>
+                <a
+                  href="policy.html"
+                  class="text-black hover:text-teal-600 2xl:text-xl lg:text-lg font-medium transition-colors duration-200 px-4 py-2 rounded"
+                  data-i18n="nav.policy"
+                >
+                  Chính sách
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200"
+          >
+            <svg
+              id="hamburger-icon"
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+            <svg
+              id="close-icon"
+              class="fill-current h-3 w-3 hidden"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Close</title>
               <path
-                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+              />
             </svg>
           </button>
         </div>
+      </div>
 
-        <!-- Mobile Menu Items -->
-        <div class="flex-1 overflow-y-auto">
-          <ul class="flex flex-col space-y-2 p-4">
-            <li>
-              <a href="index.html"
-                class="block text-black hover:text-teal-600  hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.introduction">
-                Giới thiệu
-              </a>
-            </li>
-            <li>
-              <a href="projects.html"
-                class="block text-teal-600 hover:text-teal-800 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.projects">
-                Dự án
-              </a>
-            </li>
-            <li>
-              <a href="collaborations.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.collaborations">
-                Hợp tác
-              </a>
-            </li>
-            <li>
-              <a href="achievements.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.achievements">
-                Thành tựu
-              </a>
-            </li>
-            <li>
-              <a href="gallery.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.gallery">
-                Hoạt động
-              </a>
-            </li>
-            <li>
-              <a href="policy.html"
-                class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
-                data-i18n="nav.policy">
-                Chính sách
-              </a>
-            </li>
-          </ul>
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+      >
+        <div class="flex flex-col h-full">
+          <!-- Mobile Menu Header -->
+          <div class="flex items-center justify-between p-4 border-b">
+            <span class="text-xl font-bold text-teal-600">Menu</span>
+            <button
+              id="close-menu-button"
+              class="flex items-center px-3 py-2 border rounded text-teal-600 border-teal-600 hover:text-teal-800 hover:border-teal-800 transition-colors duration-200"
+            >
+              <svg
+                class="fill-current h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile Menu Items -->
+          <div class="flex-1 overflow-y-auto">
+            <ul class="flex flex-col space-y-2 p-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.introduction"
+                >
+                  Giới thiệu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="block text-teal-600 hover:text-teal-800 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.projects"
+                >
+                  Dự án
+                </a>
+              </li>
+              <li>
+                <a
+                  href="collaborations.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.collaborations"
+                >
+                  Hợp tác
+                </a>
+              </li>
+              <li>
+                <a
+                  href="achievements.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.achievements"
+                >
+                  Thành tựu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.gallery"
+                >
+                  Hoạt động
+                </a>
+              </li>
+              <li>
+                <a
+                  href="policy.html"
+                  class="block text-black hover:text-teal-600 hover:bg-teal-50 text-lg font-medium transition-colors duration-200 px-4 py-4 rounded-lg"
+                  data-i18n="nav.policy"
+                >
+                  Chính sách
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section class="py-12 px-6" data-aos="fade-up">
-    <div class="container mx-auto text-center">
-      <div class="flex justify-center items-center mb-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="bg-teal-600 p-4 rounded-2xl shadow-lg">
-          <i data-lucide="clipboard-list" class="w-12 h-12 text-white"></i>
+    <section class="py-12 px-6" data-aos="fade-up">
+      <div class="container mx-auto text-center">
+        <div
+          class="flex justify-center items-center mb-6"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="bg-green-600 p-4 rounded-2xl shadow-lg">
+            <i data-lucide="clipboard-list" class="w-12 h-12 text-white"></i>
+          </div>
         </div>
+        <h2
+          class="text-4xl md:text-6xl font-bold pb-6 bg-gradient-to-r from-yellow-500 to-teal-600 bg-clip-text text-transparent"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-i18n="projects.title"
+        >
+          Các Đề Tài, Dự Án
+        </h2>
+        <p
+          class="text-xl text-gray-500 max-w-5xl mx-auto leading-relaxed"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-i18n="projects.description"
+        >
+          Dưới đây là danh sách các sản phẩm mà UCK TEAM đã, đang, sẽ thực hiện.
+          Các sản phẩm trải dài từ các dự án thực tế đến các đề tài nghiên cứu
+          khoa học tiêu biểu cấp Khoa, cấp Học viên được áp dụng các công nghệ
+          mới và mạnh mẽ nhất như: Các FrameWorks hiện đại, các mô hình Trí tuệ
+          nhân tạo mạnh mẽ, ...
+        </p>
       </div>
-      <h2
-        class="text-4xl md:text-6xl font-bold pb-6 bg-gradient-to-r from-yellow-500 to-teal-600 bg-clip-text text-transparent"
-        data-aos="fade-up" data-aos-delay="400" data-i18n="projects.title">
-        Các Đề Tài, Dự Án
-      </h2>
-      <p class="text-xl text-gray-500 max-w-5xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="600"
-        data-i18n="projects.description">
-        Dưới đây là danh sách các sản phẩm mà UCK TEAM đã, đang, sẽ thực hiện. Các sản phẩm trải dài từ các dự án thực
-        tế đến các đề tài nghiên cứu khoa học tiêu biểu cấp Khoa, cấp Học viên được áp dụng các công nghệ mới và mạnh mẽ
-        nhất như: Các FrameWorks hiện đại, các mô hình Trí tuệ nhân tạo mạnh mẽ, ...
-      </p>
-    </div>
-  </section>
+    </section>
 
-  <section class="min-h-screen ">
-    <div class="max-w-6xl mx-auto px-4">
-      <!-- Projects Completed & In Progress Section -->
-      <section class="mb-20">
-        <div class="flex flex-col sm:flex-row sm:items-center mb-6 md:mb-8 gap-3 sm:gap-0" data-aos="fade-right">
-          <div class="flex items-center gap-3 flex-shrink-0">
-            <div class="w-6 h-6 sm:w-8 sm:h-8 bg-teal-500 rounded-lg flex items-center justify-center">
-              <i data-lucide="code-2" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
-            </div>
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900" data-i18n="projects.completed">
-              Các Dự Án Đã & Đang Thực Hiện
-            </h2>
-          </div>
-
-          <div class="flex items-center gap-2 sm:gap-4 sm:flex-1">
-            <div class="flex-1 h-px bg-gradient-to-r from-blue-200 to-transparent hidden sm:block"></div>
-            <span
-              class="bg-teal-100 text-teal-800 text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full whitespace-nowrap">
-              5 <span data-i18n="projects.count">dự án</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- Dự án 1-->
+    <section class="min-h-screen">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Projects Completed & In Progress Section -->
+        <section class="mb-20">
           <div
-            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            data-aos="fade-up" data-aos-delay="100">
-            <div class="relative">
-              <div class="h-64 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
-                  <img src="assets/du-an-1.jpg" alt="Website bán khóa học" class="w-full h-full object-cover">
+            class="flex flex-col sm:flex-row sm:items-center mb-6 md:mb-8 gap-3 sm:gap-0"
+            data-aos="fade-right"
+          >
+            <div class="flex items-center gap-3 flex-shrink-0">
+              <div
+                class="w-6 h-6 sm:w-8 sm:h-8 bg-teal-500 rounded-lg flex items-center justify-center"
+              >
+                <i
+                  data-lucide="code-2"
+                  class="w-4 h-4 sm:w-5 sm:h-5 text-white"
+                ></i>
+              </div>
+              <h2
+                class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900"
+                data-i18n="projects.completed"
+              >
+                Các Dự Án Đã & Đang Thực Hiện
+              </h2>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4 sm:flex-1">
+              <div
+                class="flex-1 h-px bg-gradient-to-r from-blue-200 to-transparent hidden sm:block"
+              ></div>
+              <span
+                class="bg-teal-100 text-teal-800 text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full whitespace-nowrap"
+              >
+                5 <span data-i18n="projects.count">dự án</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Dự án 1-->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="relative">
+                <div
+                  class="h-64 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
+                >
+                  <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
+                    <img
+                      src="assets/du-an-1.jpg"
+                      alt="Website bán khóa học"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >2024</span
+                  >
+                </div>
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium"
+                    data-i18n="projects.status.completed"
+                    >Hoàn thành</span
+                  >
                 </div>
               </div>
 
-              <div class="absolute top-4 right-4">
-                <span
-                  class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium">2024</span>
-              </div>
-              <div class="absolute top-4 left-4">
-                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium"
-                  data-i18n="projects.status.completed">Hoàn thành</span>
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                      Ecourse
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-1">
+                      Website •
+                      <span data-i18n="projects.education">Giáo dục</span> •
+                      2024
+                    </p>
+                  </div>
+                </div>
+
+                <p
+                  class="text-gray-700 mb-6 leading-relaxed"
+                  data-i18n="projects.project-1"
+                >
+                  Website bán khóa học - Website thương mại điện tử bán các khóa
+                  học lập trình từ cơ bản đến nâng cao.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-lime-500 rounded-full"
+                    >SpringBoot</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-rose-600 rounded-full"
+                    >React</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-sky-400 rounded-full"
+                    >RESTful API</span
+                  >
+                </div>
+
+                <div class="flex gap-3">
+                  <a
+                    href="#"
+                    class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_demo">Xem Demo</span>
+                  </a>
+                  <a
+                    href="https://github.com/dvh3152002/backend-web-day-hoc"
+                    class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_source">Xem Source</span>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="p-6">
-              <div class="flex items-start justify-between mb-4">
-                <div>
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">Ecourse</h3>
-                  <p class="text-gray-600 text-sm mb-1">Website • <span data-i18n="projects.education">Giáo dục</span> •
-                    2024</p>
+            <!-- Dự án 2-->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="relative">
+                <div
+                  class="h-64 bg-gradient-to-br from-yellow-600 to-amber-500 flex items-center justify-center"
+                >
+                  <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
+                    <img
+                      src="assets/du-an-2.jpg"
+                      alt="Website bán khóa học"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >2025</span
+                  >
+                </div>
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium"
+                    data-i18n="projects.status.completed"
+                    >Hoàn thành</span
+                  >
                 </div>
               </div>
 
-              <p class="text-gray-700 mb-6 leading-relaxed" data-i18n="projects.project-1">
-                Website bán khóa học - Website thương mại điện tử bán các khóa học lập trình từ cơ bản đến nâng cao.
-              </p>
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                      VNUA Services
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-1">
+                      Website •
+                      <span data-i18n="projects.service">Dịch vụ</span> • 2025
+                    </p>
+                  </div>
+                </div>
 
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span class="px-3 py-1 text-xs font-medium text-white bg-lime-500 rounded-full">SpringBoot</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-rose-600 rounded-full">React</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full">MySQL</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-sky-400 rounded-full">RESTful API</span>
+                <p
+                  class="text-gray-700 mb-6 leading-relaxed"
+                  data-i18n="projects.project-2"
+                >
+                  Website kênh thông tin dịch vụ khu vực Học viện Nông nghiệp
+                  Việt Nam (tích hợp quét mã QR thanh toán).
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-lime-500 rounded-full"
+                    >SpringBoot</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-teal-500 rounded-full"
+                    >Vue</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-sky-400 rounded-full"
+                    >RESTful API</span
+                  >
+                </div>
+
+                <div class="flex gap-3">
+                  <a
+                    href="#"
+                    class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_demo">Xem Demo</span>
+                  </a>
+                  <a
+                    href="https://github.com/dgh1u/nckh_motel-room_be"
+                    class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_source">Xem Source</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dự án 3 -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="relative">
+                <div
+                  class="h-64 bg-gradient-to-br from-blue-500 to-sky-600 flex items-center justify-center"
+                >
+                  <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
+                    <img
+                      src="assets/du-an-3.jpg"
+                      alt="Website bán khóa học"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >2025</span
+                  >
+                </div>
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium"
+                    data-i18n="projects.status.completed"
+                    >Hoàn thành</span
+                  >
+                </div>
               </div>
 
-              <div class="flex gap-3">
-                <a href="#"
-                  class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="external-link" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_demo">Xem Demo</span>
-                </a>
-                <a href="https://github.com/dvh3152002/backend-web-day-hoc"
-                  class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="github" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_source">Xem Source</span>
-                </a>
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                      VNUA Services (Mobile App)
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-1">
+                      Mobile App •
+                      <span data-i18n="projects.service">Dịch vụ</span> • 2025
+                    </p>
+                  </div>
+                </div>
+
+                <p
+                  class="text-gray-700 mb-4 leading-relaxed"
+                  data-i18n="projects.project-3"
+                >
+                  Ứng dụng di động kênh thông tin dịch vụ khu vực Học viện Nông
+                  nghiệp Việt Nam (tích hợp quét mã QR thanh toán).
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-lime-500 rounded-full"
+                    >SpringBoot</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-gray-600 rounded-full"
+                    >Dart</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-sky-400 rounded-full"
+                    >RESTful API</span
+                  >
+                </div>
+
+                <div class="flex gap-3">
+                  <a
+                    href="#"
+                    class="flex-1 bg-green-600 hover:bg-green-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                    <span data-i18n="projects.download_app">Tải ứng dụng</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_source">Xem Source</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dự án 4 -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="relative">
+                <div
+                  class="h-64 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center"
+                >
+                  <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
+                    <img
+                      src="assets/du-an-4.jpg"
+                      alt="Website bán khóa học"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >2025</span
+                  >
+                </div>
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium"
+                    data-i18n="projects.status.completed"
+                    >Hoàn thành</span
+                  >
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                      Chatbot VNUA Services
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-1">
+                      <span data-i18n="projects.ai">Trí tuệ nhân tạo</span> •
+                      <span data-i18n="projects.service">Dịch vụ</span> • 2025
+                    </p>
+                  </div>
+                </div>
+
+                <p
+                  class="text-gray-700 mb-4 leading-relaxed"
+                  data-i18n="projects.project-4"
+                >
+                  Chatbot hỗ trợ người dùng về thông tin dịch vụ khu vực Học
+                  viện Nông nghiệp Việt Nam (Fine-tuning từ mô hình AI Gemini).
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-green-600 rounded-full"
+                    >Node</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-gradient-to-r from-purple-500 to-rose-500 rounded-full"
+                    >Gemini</span
+                  >
+                </div>
+
+                <div class="flex gap-3">
+                  <a
+                    href="#"
+                    class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_demo">Xem Demo</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_source">Xem Source</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dự án 5 -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="relative">
+                <div
+                  class="h-64 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center"
+                >
+                  <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
+                    <img
+                      src="assets/du-an-5.jpg"
+                      alt="Website bán khóa học"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >2025</span
+                  >
+                </div>
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1"
+                  >
+                    <div
+                      class="w-2 h-2 bg-white rounded-full animate-pulse"
+                    ></div>
+                    <span data-i18n="projects.status.developing"
+                      >Đang phát triển</span
+                    >
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                      VNUA Exam
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-1">
+                      Desktop App •
+                      <span data-i18n="projects.education">Giáo dục</span> •
+                      2025
+                    </p>
+                  </div>
+                </div>
+
+                <p
+                  class="text-gray-700 mb-4 leading-relaxed"
+                  data-i18n="projects.project-5"
+                >
+                  Ứng dụng trên Desktop cho phép sinh viên làm bài thi trên máy
+                  và giáo viên quản lý thi.
+                </p>
+
+                <div
+                  class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6"
+                >
+                  <div class="flex items-center gap-2 text-yellow-800">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    <span class="text-sm font-medium"
+                      ><span data-i18n="projects.progress">Tiến độ:</span> 90% |
+                      <span data-i18n="projects.expected"
+                        >Dự kiến hoàn thành:</span
+                      >
+                      Q3 2025</span
+                    >
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-yellow-500 rounded-full"
+                    >Electron</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-lime-500 rounded-full"
+                    >SpringBoot</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full"
+                    >MySQL</span
+                  >
+                </div>
+
+                <div class="flex gap-3">
+                  <button
+                    class="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="eye" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_preview">Xem Preview</span>
+                  </button>
+                  <button
+                    class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_source">Xem Source</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Dự án 2-->
           <div
-            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            data-aos="fade-up" data-aos-delay="200">
-            <div class="relative">
-              <div class="h-64 bg-gradient-to-br from-yellow-600 to-amber-500 flex items-center justify-center">
-                <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
-                  <img src="assets/du-an-2.jpg" alt="Website bán khóa học" class="w-full h-full object-cover">
-                </div>
+            class="flex flex-col sm:flex-row sm:items-center mt-8 md:mt-16 mb-6 md:mb-8 gap-3 sm:gap-0"
+            data-aos="fade-right"
+          >
+            <div class="flex items-center gap-3 flex-shrink-0">
+              <div
+                class="w-6 h-6 sm:w-8 sm:h-8 bg-teal-500 rounded-lg flex items-center justify-center"
+              >
+                <i
+                  data-lucide="rocket"
+                  class="w-4 h-4 sm:w-5 sm:h-5 text-white"
+                ></i>
               </div>
-
-              <div class="absolute top-4 right-4">
-                <span
-                  class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium">2025</span>
-              </div>
-              <div class="absolute top-4 left-4">
-                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium"
-                  data-i18n="projects.status.completed">Hoàn thành</span>
-              </div>
+              <h2
+                class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900"
+                data-i18n="projects.planned"
+              >
+                Các Dự Án Sẽ Triển Khai
+              </h2>
             </div>
 
-            <div class="p-6">
-              <div class="flex items-start justify-between mb-4">
-                <div>
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">VNUA Services</h3>
-                  <p class="text-gray-600 text-sm mb-1">Website • <span data-i18n="projects.service">Dịch vụ</span> •
-                    2025</p>
-                </div>
-              </div>
-
-              <p class="text-gray-700 mb-6 leading-relaxed" data-i18n="projects.project-2">
-                Website kênh thông tin dịch vụ khu vực Học viện Nông nghiệp Việt Nam (tích hợp quét mã QR thanh toán).
-              </p>
-
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span class="px-3 py-1 text-xs font-medium text-white bg-lime-500 rounded-full">SpringBoot</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-teal-500 rounded-full">Vue</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full">MySQL</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-sky-400 rounded-full">RESTful API</span>
-              </div>
-
-              <div class="flex gap-3">
-                <a href="#"
-                  class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="external-link" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_demo">Xem Demo</span>
-                </a>
-                <a href="https://github.com/dgh1u/nckh_motel-room_be"
-                  class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="github" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_source">Xem Source</span>
-                </a>
-              </div>
+            <div class="flex items-center gap-2 sm:gap-4 sm:flex-1">
+              <div
+                class="flex-1 h-px bg-gradient-to-r from-teal-200 to-transparent hidden sm:block"
+              ></div>
+              <span
+                class="bg-teal-100 text-teal-800 text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full whitespace-nowrap"
+              >
+                1 <span data-i18n="projects.count">dự án</span>
+              </span>
             </div>
           </div>
 
-          <!-- Dự án 3 -->
-          <div
-            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            data-aos="fade-up" data-aos-delay="300">
-            <div class="relative">
-              <div class="h-64 bg-gradient-to-br from-blue-500 to-sky-600 flex items-center justify-center">
-                <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
-                  <img src="assets/du-an-3.jpg" alt="Website bán khóa học" class="w-full h-full object-cover">
-                </div>
-              </div>
-              <div class="absolute top-4 right-4">
-                <span
-                  class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium">2025</span>
-              </div>
-              <div class="absolute top-4 left-4">
-                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium"
-                  data-i18n="projects.status.completed">Hoàn thành</span>
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="flex items-start justify-between mb-4">
-                <div>
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">VNUA Services (Mobile App)</h3>
-                  <p class="text-gray-600 text-sm mb-1">Mobile App • <span data-i18n="projects.service">Dịch vụ</span> •
-                    2025</p>
-                </div>
-              </div>
-
-              <p class="text-gray-700 mb-4 leading-relaxed" data-i18n="projects.project-3">
-                Ứng dụng di động kênh thông tin dịch vụ khu vực Học viện Nông nghiệp Việt Nam (tích hợp quét mã QR thanh
-                toán).
-              </p>
-
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span class="px-3 py-1 text-xs font-medium text-white bg-lime-500 rounded-full">SpringBoot</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-gray-600 rounded-full">Dart</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full">MySQL</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-sky-400 rounded-full">RESTful API</span>
-              </div>
-
-              <div class="flex gap-3">
-                <a href="#"
-                  class="flex-1 bg-green-600 hover:bg-green-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="download" class="w-4 h-4"></i>
-                  <span data-i18n="projects.download_app">Tải ứng dụng</span>
-                </a>
-                <a href="#"
-                  class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="github" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_source">Xem Source</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dự án 4 -->
-          <div
-            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            data-aos="fade-up" data-aos-delay="400">
-            <div class="relative">
-              <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
-                <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
-                  <img src="assets/du-an-4.jpg" alt="Website bán khóa học" class="w-full h-full object-cover">
-                </div>
-              </div>
-              <div class="absolute top-4 right-4">
-                <span
-                  class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium">2025</span>
-              </div>
-              <div class="absolute top-4 left-4">
-                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium"
-                  data-i18n="projects.status.completed">Hoàn thành</span>
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="flex items-start justify-between mb-4">
-                <div>
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">Chatbot VNUA Services</h3>
-                  <p class="text-gray-600 text-sm mb-1"><span data-i18n="projects.ai">Trí tuệ nhân tạo</span> • <span
-                      data-i18n="projects.service">Dịch vụ</span> • 2025</p>
-                </div>
-              </div>
-
-              <p class="text-gray-700 mb-4 leading-relaxed" data-i18n="projects.project-4">
-                Chatbot hỗ trợ người dùng về thông tin dịch vụ khu vực Học viện Nông nghiệp Việt Nam (Fine-tuning từ mô
-                hình AI Gemini).
-              </p>
-
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span class="px-3 py-1 text-xs font-medium text-white bg-green-600 rounded-full">Node</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full">MySQL</span>
-                <span
-                  class="px-3 py-1 text-xs font-medium text-white bg-gradient-to-r from-purple-500 to-rose-500 rounded-full">Gemini</span>
-              </div>
-
-              <div class="flex gap-3">
-                <a href="#"
-                  class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="external-link" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_demo">Xem Demo</span>
-                </a>
-                <a href="#"
-                  class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="github" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_source">Xem Source</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dự án 5 -->
-          <div
-            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            data-aos="fade-up" data-aos-delay="500">
-            <div class="relative">
-              <div class="h-64 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-                <div class="w-4/5 h-3/4 rounded-xl overflow-hidden shadow-lg">
-                  <img src="assets/du-an-5.jpg" alt="Website bán khóa học" class="w-full h-full object-cover">
-                </div>
-              </div>
-              <div class="absolute top-4 right-4">
-                <span
-                  class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium">2025</span>
-              </div>
-              <div class="absolute top-4 left-4">
-                <span
-                  class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
-                  <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                  <span data-i18n="projects.status.developing">Đang phát triển</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="flex items-start justify-between mb-4">
-                <div>
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">VNUA Exam</h3>
-                  <p class="text-gray-600 text-sm mb-1">Desktop App • <span data-i18n="projects.education">Giáo
-                      dục</span> • 2025</p>
-                </div>
-              </div>
-
-              <p class="text-gray-700 mb-4 leading-relaxed" data-i18n="projects.project-5">
-                Ứng dụng trên Desktop cho phép sinh viên làm bài thi trên máy và giáo viên quản lý thi.
-              </p>
-
-              <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6">
-                <div class="flex items-center gap-2 text-yellow-800">
-                  <i data-lucide="clock" class="w-4 h-4"></i>
-                  <span class="text-sm font-medium"><span data-i18n="projects.progress">Tiến độ:</span> 90% | <span
-                      data-i18n="projects.expected">Dự kiến hoàn thành:</span> Q3 2025</span>
-                </div>
-              </div>
-
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span class="px-3 py-1 text-xs font-medium text-white bg-yellow-500 rounded-full">Electron</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-lime-500 rounded-full">SpringBoot</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full">MySQL</span>
-              </div>
-
-              <div class="flex gap-3">
-                <button
-                  class="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="eye" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_preview">Xem Preview</span>
-                </button>
-                <button
-                  class="flex-1 bg-gray-900 hover:bg-gray-500 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="github" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_source">Xem Source</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row sm:items-center mt-8 md:mt-16 mb-6 md:mb-8 gap-3 sm:gap-0"
-          data-aos="fade-right">
-          <div class="flex items-center gap-3 flex-shrink-0">
-            <div class="w-6 h-6 sm:w-8 sm:h-8 bg-teal-500 rounded-lg flex items-center justify-center">
-              <i data-lucide="rocket" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
-            </div>
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900" data-i18n="projects.planned">
-              Các Dự Án Sẽ Triển Khai
-            </h2>
-          </div>
-
-          <div class="flex items-center gap-2 sm:gap-4 sm:flex-1">
-            <div class="flex-1 h-px bg-gradient-to-r from-teal-200 to-transparent hidden sm:block"></div>
-            <span
-              class="bg-teal-100 text-teal-800 text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full whitespace-nowrap">
-              1 <span data-i18n="projects.count">dự án</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- Learning Platform Project -->
-          <div
-            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            data-aos="fade-up" data-aos-delay="200">
-            <div class="relative">
-              <div class="h-64 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                  <div class="text-2xl font-bold text-gray-800 mb-2">UCK TEAM </div>
-                  <div class="text-sm text-gray-600 mb-4">Portfolio</div>
-                  <div class="flex gap-2">
-                    <div class="w-8 h-8 bg-blue-400 rounded-lg flex items-center justify-center">
-                      <i data-lucide="briefcase-business" class="w-4 h-4 text-white"></i>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Learning Platform Project -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="relative">
+                <div
+                  class="h-64 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center"
+                >
+                  <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="text-2xl font-bold text-gray-800 mb-2">
+                      UCK TEAM
                     </div>
-                    <div class="w-8 h-8 bg-green-400 rounded-lg flex items-center justify-center">
-                      <i data-lucide="code" class="w-4 h-4 text-white"></i>
+                    <div class="text-sm text-gray-600 mb-4">Portfolio</div>
+                    <div class="flex gap-2">
+                      <div
+                        class="w-8 h-8 bg-blue-400 rounded-lg flex items-center justify-center"
+                      >
+                        <i
+                          data-lucide="briefcase-business"
+                          class="w-4 h-4 text-white"
+                        ></i>
+                      </div>
+                      <div
+                        class="w-8 h-8 bg-green-400 rounded-lg flex items-center justify-center"
+                      >
+                        <i data-lucide="code" class="w-4 h-4 text-white"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="absolute top-4 right-4">
-                <span class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium">Q4
-                  2025</span>
-              </div>
-              <div class="absolute top-4 left-4">
-                <span
-                  class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
-                  <i data-lucide="calendar" class="w-3 h-3"></i>
-                  <span data-i18n="projects.status.planned">Kế hoạch</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="flex items-start justify-between mb-4">
-                <div>
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">UCK TEAM Portfolio</h3>
-                  <p class="text-gray-600 text-sm mb-1">Website • <span data-i18n="projects.education">Giáo dục</span> •
-                    Q4 2025</p>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >Q4 2025</span
+                  >
+                </div>
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1"
+                  >
+                    <i data-lucide="calendar" class="w-3 h-3"></i>
+                    <span data-i18n="projects.status.planned">Kế hoạch</span>
+                  </span>
                 </div>
               </div>
 
-              <p class="text-gray-700 mb-4 leading-relaxed" data-i18n="projects.project-6">
-                Website giới thiệu về nhóm nghiên cứu UCK TEAM - khoa Công nghệ thông tin - Học viện Nông Nghiệp Việt
-                Nam.
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                      UCK TEAM Portfolio
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-1">
+                      Website •
+                      <span data-i18n="projects.education">Giáo dục</span> • Q4
+                      2025
+                    </p>
+                  </div>
+                </div>
+
+                <p
+                  class="text-gray-700 mb-4 leading-relaxed"
+                  data-i18n="projects.project-6"
+                >
+                  Website giới thiệu về nhóm nghiên cứu UCK TEAM - khoa Công
+                  nghệ thông tin - Học viện Nông Nghiệp Việt Nam.
+                </p>
+
+                <div
+                  class="bg-cyan-50 border border-cyan-200 rounded-lg p-3 mb-6"
+                >
+                  <div class="flex items-center gap-2 text-cyan-800">
+                    <i data-lucide="target" class="w-4 h-4"></i>
+                    <span class="text-sm font-medium"
+                      ><span data-i18n="projects.goal">Mục tiêu:</span>
+                      <span data-i18n="projects.connect"
+                        >Kết nối nhóm tới nhiều người</span
+                      >
+                      | <span data-i18n="projects.demo">Demo:</span> Q1
+                      2026</span
+                    >
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-red-500 rounded-full"
+                    >HTML</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full"
+                    >CSS</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs font-medium text-white bg-yellow-600 rounded-full"
+                    >JavaScript</span
+                  >
+                </div>
+
+                <div class="flex gap-3">
+                  <button
+                    class="flex-1 bg-cyan-600 hover:bg-cyan-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    <span data-i18n="projects.view_plan">Xem Kế Hoạch</span>
+                  </button>
+                  <button
+                    class="flex-1 bg-gray-300 text-gray-500 font-medium py-2.5 px-4 rounded-lg cursor-not-allowed flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="lock" class="w-4 h-4"></i>
+                    <span data-i18n="projects.no_source">Chưa có Source</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Summary Stats -->
+        <section
+          class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 mb-8 max-w-7xl mx-auto"
+          data-aos="fade-up"
+        >
+          <h3
+            class="text-2xl font-bold text-teal-600 mb-6 text-center"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-i18n="projects.summary"
+          >
+            Tổng Quan
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-white rounded-xl p-6 text-center shadow-md"
+              data-aos="flip-left"
+              data-aos-delay="300"
+            >
+              <div
+                class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3"
+              >
+                <i
+                  data-lucide="check-circle"
+                  class="w-6 h-6 text-green-600"
+                ></i>
+              </div>
+              <div class="text-2xl font-bold text-gray-900 mb-1">4</div>
+              <div
+                class="text-sm text-gray-600"
+                data-i18n="projects.summary.completed"
+              >
+                Dự án hoàn thành
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl p-6 text-center shadow-md"
+              data-aos="flip-left"
+              data-aos-delay="400"
+            >
+              <div
+                class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-3"
+              >
+                <i data-lucide="clock" class="w-6 h-6 text-yellow-600"></i>
+              </div>
+              <div class="text-2xl font-bold text-gray-900 mb-1">2</div>
+              <div
+                class="text-sm text-gray-600"
+                data-i18n="projects.summary.developing"
+              >
+                Dự án đang phát triển
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl p-6 text-center shadow-md"
+              data-aos="flip-left"
+              data-aos-delay="500"
+            >
+              <div
+                class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3"
+              >
+                <i data-lucide="rocket" class="w-6 h-6 text-purple-600"></i>
+              </div>
+              <div class="text-2xl font-bold text-gray-900 mb-1">1</div>
+              <div
+                class="text-sm text-gray-600"
+                data-i18n="projects.summary.planned"
+              >
+                Dự án kế hoạch
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <div class="text-center my-16" data-aos="fade-up">
+          <p
+            class="text-gray-600 mb-6 text-lg font-semibold"
+            data-i18n="projects.collaboration"
+          >
+            Quan tâm đến việc hợp tác trong các dự án tương lai?
+          </p>
+          <div class="flex gap-4 justify-center">
+            <a
+              href="index.html#lien-he"
+              class="bg-gradient-to-r from-yellow-500 to-teal-500 text-white font-medium py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-i18n="projects.contact_collab"
+            >
+              Liên Hệ Hợp Tác
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-6">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row justify-between items-start">
+          <!-- Left side -->
+          <div class="space-y-6 flex-1">
+            <!-- Logo and Team Name -->
+            <div class="flex items-center space-x-4">
+              <img
+                src="assets/uck-team-logo.png"
+                alt="UCK Team Logo"
+                class="w-20 h-20 object-contain"
+              />
+              <h3 class="text-2xl font-bold text-white">UCK TEAM</h3>
+            </div>
+
+            <!-- Description -->
+            <div class="text-gray-300 leading-relaxed max-w-3xl">
+              <p class="text-justify text-lg" data-i18n="footer.description">
+                UCK Team là đội ngũ nghiên cứu và phát triển công nghệ thông tin
+                tại Học viện Nông nghiệp Việt Nam. Chúng tôi chuyên về phát
+                triển các giải pháp công nghệ hiện đại, ứng dụng trí tuệ nhân
+                tạo và khoa học dữ liệu trong nông nghiệp. Với kinh nghiệm và
+                đam mê, UCK Team cam kết mang đến những sản phẩm chất lượng cao,
+                góp phần thúc đẩy sự phát triển của ngành nông nghiệp thông minh
+                và bền vững tại Việt Nam.
               </p>
-
-              <div class="bg-cyan-50 border border-cyan-200 rounded-lg p-3 mb-6">
-                <div class="flex items-center gap-2 text-cyan-800">
-                  <i data-lucide="target" class="w-4 h-4"></i>
-                  <span class="text-sm font-medium"><span data-i18n="projects.goal">Mục tiêu:</span> <span
-                      data-i18n="projects.connect">Kết nối nhóm
-                      tới
-                      nhiều người</span> | <span data-i18n="projects.demo">Demo:</span> Q1 2026</span>
-                </div>
-              </div>
-
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span class="px-3 py-1 text-xs font-medium text-white bg-red-500 rounded-full">HTML</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-full">CSS</span>
-                <span class="px-3 py-1 text-xs font-medium text-white bg-yellow-600 rounded-full">JavaScript</span>
-              </div>
-
-              <div class="flex gap-3">
-                <button
-                  class="flex-1 bg-cyan-600 hover:bg-cyan-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
-                  <i data-lucide="file-text" class="w-4 h-4"></i>
-                  <span data-i18n="projects.view_plan">Xem Kế Hoạch</span>
-                </button>
-                <button
-                  class="flex-1 bg-gray-300 text-gray-500 font-medium py-2.5 px-4 rounded-lg cursor-not-allowed flex items-center justify-center gap-2">
-                  <i data-lucide="lock" class="w-4 h-4"></i>
-                  <span data-i18n="projects.no_source">Chưa có Source</span>
-                </button>
-              </div>
             </div>
+          </div>
+
+          <!-- Right side -->
+          <div class="lg:text-right">
+            <h4
+              class="text-2xl font-semibold text-white mb-4"
+              data-i18n="footer.sitemap"
+            >
+              Sơ đồ Website
+            </h4>
+            <nav class="space-y-3">
+              <a
+                href="index.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.introduction"
+              >
+                Giới thiệu
+              </a>
+              <a
+                href="projects.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.projects"
+              >
+                Dự án
+              </a>
+              <a
+                href="collaborations.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.collaborations"
+              >
+                Hợp tác
+              </a>
+              <a
+                href="achievements.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.achievements"
+              >
+                Thành tựu
+              </a>
+              <a
+                href="gallery.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.gallery"
+              >
+                Hoạt động
+              </a>
+              <a
+                href="policy.html"
+                class="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-i18n="nav.policy"
+              >
+                Chính sách
+              </a>
+            </nav>
           </div>
         </div>
-      </section>
 
-      <!-- Summary Stats -->
-      <section class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 mb-8 max-w-7xl mx-auto"
-        data-aos="fade-up">
-        <h3 class="text-2xl font-bold text-teal-600 mb-6 text-center" data-aos="zoom-in" data-aos-delay="200"
-          data-i18n="projects.summary">Tổng Quan</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-white rounded-xl p-6 text-center shadow-md" data-aos="flip-left" data-aos-delay="300">
-            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <i data-lucide="check-circle" class="w-6 h-6 text-green-600"></i>
-            </div>
-            <div class="text-2xl font-bold text-gray-900 mb-1">4</div>
-            <div class="text-sm text-gray-600" data-i18n="projects.summary.completed">Dự án hoàn thành</div>
-          </div>
-
-          <div class="bg-white rounded-xl p-6 text-center shadow-md" data-aos="flip-left" data-aos-delay="400">
-            <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <i data-lucide="clock" class="w-6 h-6 text-yellow-600"></i>
-            </div>
-            <div class="text-2xl font-bold text-gray-900 mb-1">2</div>
-            <div class="text-sm text-gray-600" data-i18n="projects.summary.developing">Dự án đang phát triển</div>
-          </div>
-
-          <div class="bg-white rounded-xl p-6 text-center shadow-md" data-aos="flip-left" data-aos-delay="500">
-            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <i data-lucide="rocket" class="w-6 h-6 text-purple-600"></i>
-            </div>
-            <div class="text-2xl font-bold text-gray-900 mb-1">1</div>
-            <div class="text-sm text-gray-600" data-i18n="projects.summary.planned">Dự án kế hoạch</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Bottom CTA -->
-      <div class="text-center my-16" data-aos="fade-up">
-        <p class="text-gray-600 mb-6 text-lg font-semibold" data-i18n="projects.collaboration">Quan tâm đến việc hợp tác
-          trong các dự án tương lai?</p>
-        <div class="flex gap-4 justify-center">
-          <a href="index.html#lien-he"
-            class="bg-gradient-to-r from-yellow-500 to-teal-500  text-white font-medium py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105"
-            data-aos="zoom-in" data-aos-delay="200" data-i18n="projects.contact_collab">
-            Liên Hệ Hợp Tác
-          </a>
+        <!-- Copyright - Moved to bottom and centered -->
+        <div class="pt-6 border-t border-gray-800 mt-6 text-center">
+          <p class="text-gray-400 text-lg" data-i18n="footer.copyright">
+            Copyright © UCK TEAM
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <footer class="bg-gray-900 text-white py-6">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex flex-col lg:flex-row justify-between items-start ">
-        <!-- Left side -->
-        <div class="space-y-6 flex-1">
-          <!-- Logo and Team Name -->
-          <div class="flex items-center space-x-4">
-            <img src="assets/uck-team-logo.png" alt="UCK Team Logo" class="w-20 h-20 object-contain">
-            <h3 class="text-2xl font-bold text-white">UCK TEAM</h3>
-          </div>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
 
-          <!-- Description -->
-          <div class="text-gray-300 leading-relaxed max-w-3xl">
-            <p class="text-justify text-lg" data-i18n="footer.description">UCK Team là đội ngũ nghiên cứu và phát triển
-              công nghệ thông tin tại Học viện Nông nghiệp Việt Nam. Chúng tôi chuyên về phát triển các giải pháp công
-              nghệ hiện đại, ứng dụng trí tuệ nhân tạo và khoa học dữ liệu trong nông nghiệp. Với kinh nghiệm và đam mê,
-              UCK Team cam kết mang đến những sản phẩm chất lượng cao, góp phần thúc đẩy sự phát triển của ngành nông
-              nghiệp thông minh và bền vững tại Việt Nam.</p>
-          </div>
-        </div>
+      // Initialize AOS
+      AOS.init({
+        duration: 1600,
+        easing: "ease-in-out",
+        once: false,
+        mirror: false,
+        offset: 100,
+      });
 
-        <!-- Right side -->
-        <div class="lg:text-right">
-          <h4 class="text-2xl font-semibold text-white mb-4" data-i18n="footer.sitemap">Sơ đồ Website</h4>
-          <nav class="space-y-3">
-            <a href="index.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.introduction">
-              Giới thiệu
-            </a>
-            <a href="projects.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.projects">
-              Dự án
-            </a>
-            <a href="collaborations.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.collaborations">
-              Hợp tác
-            </a>
-            <a href="achievements.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.achievements">
-              Thành tựu
-            </a>
-            <a href="gallery.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.gallery">
-              Hoạt động
-            </a>
-            <a href="policy.html" class="block text-gray-300 hover:text-white transition-colors duration-300"
-              data-i18n="nav.policy">
-              Chính sách
-            </a>
-          </nav>
-        </div>
-      </div>
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const closeMenuButton = document.getElementById("close-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const closeIcon = document.getElementById("close-icon");
 
-      <!-- Copyright - Moved to bottom and centered -->
-      <div class="pt-6 border-t border-gray-800 mt-6 text-center">
-        <p class="text-gray-400 text-lg" data-i18n="footer.copyright">Copyright © UCK TEAM</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    // Initialize Lucide icons
-    lucide.createIcons();
-
-    // Initialize AOS
-    AOS.init({
-      duration: 1200,
-      easing: 'ease-in-out',
-      once: false,
-      mirror: false,
-      offset: 100
-    });
-
-    // Mobile menu functionality
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const closeMenuButton = document.getElementById('close-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const closeIcon = document.getElementById('close-icon');
-
-    function openMenu() {
-      mobileMenu.classList.remove('translate-x-full');
-      mobileMenu.classList.add('translate-x-0');
-      hamburgerIcon.classList.add('hidden');
-      closeIcon.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // Prevent scrolling
-    }
-
-    function closeMenu() {
-      mobileMenu.classList.remove('translate-x-0');
-      mobileMenu.classList.add('translate-x-full');
-      hamburgerIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
-      document.body.style.overflow = 'auto'; // Restore scrolling
-    }
-
-    // Event listeners
-    mobileMenuButton.addEventListener('click', () => {
-      if (mobileMenu.classList.contains('translate-x-full')) {
-        openMenu();
-      } else {
-        closeMenu();
+      function openMenu() {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+        hamburgerIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // Prevent scrolling
       }
-    });
 
-    closeMenuButton.addEventListener('click', closeMenu);
-
-    // Close menu when clicking on menu items
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
-
-    // Close menu when clicking outside (optional)
-    mobileMenu.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) {
-        closeMenu();
+      function closeMenu() {
+        mobileMenu.classList.remove("translate-x-0");
+        mobileMenu.classList.add("translate-x-full");
+        hamburgerIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+        document.body.style.overflow = "auto"; // Restore scrolling
       }
-    });
 
-    // Handle window resize
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 768) { // md breakpoint
-        closeMenu();
-      }
-    });
-  </script>
-</body>
+      // Event listeners
+      mobileMenuButton.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("translate-x-full")) {
+          openMenu();
+        } else {
+          closeMenu();
+        }
+      });
 
+      closeMenuButton.addEventListener("click", closeMenu);
+
+      // Close menu when clicking on menu items
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      // Close menu when clicking outside (optional)
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+          closeMenu();
+        }
+      });
+
+      // Handle window resize
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          // md breakpoint
+          closeMenu();
+        }
+      });
+    </script>
+  </body>
 </html>
