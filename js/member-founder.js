@@ -6,7 +6,7 @@ const memberFounder = [
     avatar: "assets/pqdung.jpg",
     role: "founder.founder",
     roleText: "Founder",
-    roleColor: "bg-yellow-500",
+    roleColor: "bg-yellow-400",
     unit: "founder.dung.unit",
     unitText:
       "Bộ môn Mạng và Hệ thống thông tin – Khoa Công nghệ thông tin – Học viện Nông nghiệp Việt Nam",
@@ -29,7 +29,7 @@ const memberFounder = [
     avatar: "assets/tthieu.png",
     role: "founder.supervisor",
     roleText: "Giảng viên phụ trách",
-    roleColor: "bg-yellow-700",
+    roleColor: "bg-yellow-600",
     unit: "founder.hieu.unit",
     unitText:
       "Bộ môn Công nghệ phần mềm – Khoa Công nghệ thông tin – Học viện Nông nghiệp Việt Nam",
