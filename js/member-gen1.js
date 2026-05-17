@@ -85,4 +85,21 @@ const memberGen1 = [
       facebook: "https://www.facebook.com/jinCoder/",
     },
   },
+  {
+    id: "dplam",
+    name: "Đỗ Phúc Lâm",
+    avatar: "assets/dplam-logo.jpg",
+    role: "team.student",
+    roleText: "Sinh viên",
+    class: "K67CNPMC",
+    department: "team.cnpm",
+    departmentText:
+      "Bộ môn Công nghệ phần mềm – Khoa Công nghệ thông tin – Học viện Nông nghiệp Việt Nam",
+    email: "671598@sv.vnua.edu.vn",
+    social: {
+      github: "https://github.com/lphucdo",
+      zalo: "#",
+      facebook: "#",
+    },
+  },
 ];

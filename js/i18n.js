@@ -58,6 +58,16 @@ class I18n {
         "founder.dvhiep": "Đặng Vũ Hiệp",
         "founder.dvnghiep": "Đoàn Văn Nghiệp",
         "founder.dplam": "Đỗ Phúc Lâm",
+        "founder.vnthanh": "Vương Nhật Thành",
+        "founder.latu": "Lê Anh Tú",
+        "founder.vxlam": "Vũ Xuân Lâm",
+        "founder.dmdai": "Đoàn Minh Đại",
+        "founder.vhttien": "Võ Hoa Thủy Tiên",
+        "founder.ltnlan": "Lương Thị Ngọc Lan",
+        "founder.ndhoan": "Nguyễn Đức Hoàn",
+        "founder.dvhoang": "Đỗ Văn Hoàng",
+        "founder.nxloc": "Nguyễn Xuân Lộc",
+        "founder.cvtai": "Chu Văn Tài",
 
         // Research Areas
         "research.title": "Lĩnh vực nghiên cứu",
@@ -347,6 +357,16 @@ class I18n {
         "founder.dvhiep": "Dang Vu Hiep",
         "founder.dvnghiep": "Doan Van Nghiep",
         "founder.dplam": "Do Phuc Lam",
+        "founder.vnthanh": "Vuong Nhat Thanh",
+        "founder.latu": "Le Anh Tu",
+        "founder.vxlam": "Vu Xuan Lam",
+        "founder.dmdai": "Doan Minh Dai",
+        "founder.vhttien": "Vo Hoa Thuy Tien",
+        "founder.ltnlan": "Luong Thi Ngoc Lan",
+        "founder.ndhoan": "Nguyen Duc Hoan",
+        "founder.dvhoang": "Do Van Hoang",
+        "founder.nxloc": "Nguyen Xuan Loc",
+        "founder.cvtai": "Chu Van Tai",
 
         // Research Areas
         "research.title": "Research Areas",
@@ -601,8 +621,8 @@ class I18n {
               <div class="relative">
     <button id="langToggleBtn" class="flex items-center space-x-2 px-3 py-2  hover:bg-white/20 rounded-lg transition-colors duration-200">
         <img src="assets/${this.currentLang}.svg" alt="${
-        this.currentLang
-      } flag" class="w-6 h-6 rounded-full object-cover">
+          this.currentLang
+        } flag" class="w-6 h-6 rounded-full object-cover">
         &nbsp;<span class="text-white font-medium">${
           this.currentLang === "vi" ? "Tiếng Việt" : "English"
         }</span>
@@ -710,7 +730,7 @@ class I18n {
 
     // Translate placeholders
     const placeholderElements = document.querySelectorAll(
-      "[data-i18n-placeholder]"
+      "[data-i18n-placeholder]",
     );
     placeholderElements.forEach((element) => {
       const key = element.getAttribute("data-i18n-placeholder");

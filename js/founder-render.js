@@ -8,21 +8,24 @@ function createFounderSpecialHTML(founder) {
   const orderClasses2 = isRight ? "order-1 md:order-2" : "";
 
   return `
-      <div class="flex flex-col ${flexDirection} space-y-12 items-center gap-4 md:gap-8 bg-white rounded-xl p-4 md:p-0" data-aos="${founder.aos
-    }">
+      <div class="flex flex-col ${flexDirection} space-y-12 items-center gap-4 md:gap-8 bg-white rounded-xl p-4 md:p-0" data-aos="${
+        founder.aos
+      }">
         <!-- Avatar -->
         <div class="flex-shrink-0">
           <div class="w-40 h-40 md:w-60 md:h-60 rounded-full overflow-hidden bg-gray-100">
-            <img src="${founder.avatar}" alt="${founder.name
-    }" class="w-full h-full object-cover object-center" />
+            <img src="${founder.avatar}" alt="${
+              founder.name
+            }" class="w-full h-full object-cover object-center" />
           </div>
         </div>
   
         <!-- Content -->
         <div class="flex-1 text-center ${textAlign}">
           <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 mb-4 ${justifyContent}">
-            ${isRight
-      ? `
+            ${
+              isRight
+                ? `
               <span class="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-medium ${orderClasses}" data-i18n="${founder.role}">
                 ${founder.roleText}
               </span>
@@ -30,7 +33,7 @@ function createFounderSpecialHTML(founder) {
                 ${founder.name}
               </h3>
             `
-      : `
+                : `
               <h3 class="text-xl md:text-3xl font-bold text-gray-800" data-i18n="founder.${founder.id}">
                 ${founder.name}
               </h3>
@@ -38,7 +41,7 @@ function createFounderSpecialHTML(founder) {
                 ${founder.roleText}
               </span>
             `
-    }
+            }
           </div>
   
           <div class="space-y-2 text-gray-700 mb-6">
@@ -48,8 +51,9 @@ function createFounderSpecialHTML(founder) {
             </p>
             <p class="text-sm md:text-lg">
               <strong data-i18n="founder.position">Chức vụ:</strong>
-              <span data-i18n="${founder.position}">${founder.positionText
-    }</span>
+              <span data-i18n="${founder.position}">${
+                founder.positionText
+              }</span>
             </p>
             <p class="text-sm md:text-lg">
               <strong>Email:</strong> ${founder.email}
@@ -57,18 +61,22 @@ function createFounderSpecialHTML(founder) {
           </div>
   
           <!-- Social Links -->
-          <div class="flex gap-4 justify-center ${isRight ? "md:justify-end" : "md:justify-start"
-    }">
-            <a href="${founder.social.website}" class="p-2 md:p-3 ${isRight ? "bg-blue-100" : "bg-gray-200"
-    } rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 group" target="_blank">
+          <div class="flex gap-4 justify-center ${
+            isRight ? "md:justify-end" : "md:justify-start"
+          }">
+            <a href="${founder.social.website}" class="p-2 md:p-3 ${
+              isRight ? "bg-blue-100" : "bg-gray-200"
+            } rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 group" target="_blank">
               <i data-lucide="globe" class="w-5 h-5 md:w-6 md:h-6"></i>
             </a>
-            <a href="${founder.social.zalo
-    }" class="p-2 md:p-3 bg-sky-300 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 group">
+            <a href="${
+              founder.social.zalo
+            }" class="p-2 md:p-3 bg-sky-300 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 group">
               <img src="assets/zalo-icon.svg" class="w-5 h-5 md:w-6 md:h-6" />
             </a>
-            <a href="${founder.social.facebook
-    }" class="p-2 md:p-3 bg-blue-600 rounded-full hover:bg-blue-800 text-white transition-all duration-300 group">
+            <a href="${
+              founder.social.facebook
+            }" class="p-2 md:p-3 bg-blue-600 rounded-full hover:bg-blue-800 text-white transition-all duration-300 group">
               <i data-lucide="facebook" class="w-5 h-5 md:w-6 md:h-6"></i>
             </a>
           </div>
@@ -93,7 +101,7 @@ function createFounderNormalHTML(founder) {
           <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
             <h4 class="text-lg md:text-2xl font-bold text-gray-800" data-i18n="founder.${founder.id}">
               ${founder.name}
-            </h4>
+            </h4> 
             <span class="${founder.roleColor} text-white px-3 py-1 rounded-full text-xs md:text-sm font-medium mx-auto sm:mx-0 w-fit" data-i18n="${founder.role}">
               ${founder.roleText}
             </span>
