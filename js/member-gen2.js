@@ -153,9 +153,9 @@ const memberGen2 = [
     department: "team.cntt",
     departmentText:
       "Bộ môn Khoa Học Máy Tính | Khoa Công nghệ thông tin | Học viện Nông nghiệp Việt Nam",
-    email: "#",
+    email: "687699@sv.vnua.edu.vn",
     social: {
-      github: "687699@sv.vnua.edu.vn",
+      github: "#",
       zalo: "#",
       facebook: "#",
     },
