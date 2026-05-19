@@ -22,7 +22,7 @@ class I18n {
         "banner.vnua": "Học viện Nông nghiệp",
         "banner.vietnam": "Việt Nam",
         "banner.description":
-          "Nơi hội tụ các sinh viên ưu tú của khoa Công nghệ thông tin - Học viện Nông nghiệp Việt Nam.",
+          "Nhóm Sinh Viên yêu thích công nghệ của khoa Công nghệ thông tin - Học viện Nông nghiệp Việt Nam.",
         "banner.academy": "Học viện Nông nghiệp",
         "banner.values": "Trân trọng, Hòa đồng & Phát triển",
         "banner.faculty_info": "Khoa Công nghệ thông tin",
@@ -31,7 +31,7 @@ class I18n {
         // About Us
         "about.title": "Về chúng tôi",
         "about.description":
-          "UCK Team là một nhóm nghiên cứu và phát triển công nghệ hàng đầu tại Khoa Công nghệ Thông tin, Học viện Nông nghiệp Việt Nam. Được thành lập vào ngày 20 tháng 11 năm 2023 với sứ mệnh đưa công nghệ thông tin vào phục vụ lợi ích sinh viên và cán bộ nhà trường, chúng tôi tập trung vào việc nghiên cứu, phát triển các giải pháp công nghệ tiên tiến nhằm giải quyết các vấn đề về khoa học và công nghệ được đặt ra.",
+          "UCK Team là một nhóm nghiên cứu và phát triển công nghệ tại Khoa Công nghệ Thông tin, Học viện Nông nghiệp Việt Nam. Được thành lập vào ngày 20 tháng 11 năm 2023 với mục đích đưa công nghệ thông tin vào phục vụ lợi ích sinh viên và cán bộ nhà trường, chúng tôi tập trung vào việc nghiên cứu, phát triển các giải pháp công nghệ nhằm giải quyết các vấn đề về khoa học và công nghệ được đặt ra.",
         "about.years_active": "Năm hoạt động",
         "about.technologies": "Công nghệ sử dụng",
         "about.active_members": "Thành viên hoạt động",
@@ -120,7 +120,7 @@ class I18n {
         // Projects
         "projects.title": "Đề Tài & Dự Án",
         "projects.description":
-          "Dưới đây là danh sách các sản phẩm mà UCK TEAM đã, đang, sẽ thực hiện. Các sản phẩm trải dài từ các dự án thực tế đến các đề tài nghiên cứu khoa học tiêu biểu cấp Khoa, cấp Học viên được áp dụng các công nghệ mới và mạnh mẽ nhất như: Các FrameWorks hiện đại, các mô hình Trí tuệ nhân tạo mạnh mẽ, ...",
+          "Dưới đây là danh sách các sản phẩm mà UCK TEAM đã, đang, sẽ thực hiện. Các sản phẩm trải dài từ các dự án thực tế đến các đề tài nghiên cứu khoa học tiêu biểu cấp Khoa, cấp Học viên được áp dụng các công nghệ mới và hiệu quả như: Các FrameWorks hiện đại, các ứng dụng AI, ...",
         "projects.completed": "Các Dự Án Đã & Đang Thực Hiện",
         "projects.planned": "Các Dự Án Sẽ Triển Khai",
         "projects.count": "dự án",
@@ -231,7 +231,7 @@ class I18n {
         // Policy
         "policy.title": "Chính sách nhận sinh viên",
         "policy.description":
-          "Gia nhập UCK TEAM - Cộng đồng các sinh viên ưu tú chuyên ngành Công nghệ thông tin, nơi kết nối những tài năng trẻ và phát triển kỹ năng lập trình chuyên nghiệp của Khoa Công nghệ thông tin - Học viện Nông nghiệp Việt Nam.",
+          "Gia nhập UCK TEAM - Cộng đồng các sinh viên đam mê chuyên ngành Công nghệ thông tin, nơi kết nối và phát triển kỹ năng lập trình chuyên nghiệp của Khoa Công nghệ thông tin - Học viện Nông nghiệp Việt Nam.",
         "policy.requirements": "Yêu cầu tuyển sinh",
         "policy.academic": "Học thuật",
         "policy.technical": "Kỹ thuật",
@@ -281,14 +281,18 @@ class I18n {
         "policy.technical_project": "• Có project cá nhân",
         "policy.technical_git": "• Làm việc với Git cơ bản",
         "policy.soft_passion": "• Có niềm đam mê với công nghệ thông tin",
-        "policy.soft_teamwork": "• Làm việc nhóm hiệu quả",
+        "policy.soft_teamwork": "• Hợp tác, cởi mở trong làm việc nhóm",
         "policy.soft_thinking": "• Tư duy logic và sáng tạo",
-        "policy.soft_responsibility": "• Nghiêm túc, tinh thần trách nhiệm cao",
+        "policy.soft_responsibility":
+          "• Nghiêm túc, thật thà, tinh thần trách nhiệm cao",
+        "policy.commitment": "Cam kết",
+        "policy.commitment_ownership":
+          "• Mọi sản phẩm được tạo ra trong quá trình tham gia nhóm đều thuộc quyền sở hữu của người sáng lập nhóm (thầy Dũng và thầy Hiếu)",
 
         // Footer
         "footer.sitemap": "Sơ đồ Website",
         "footer.description":
-          "UCK Team là nhóm nghiên cứu và phát triển công nghệ hàng đầu tại Khoa Công nghệ Thông tin, Học viện Nông nghiệp Việt Nam với sứ mệnh đưa công nghệ thông tin vào phục vụ lợi ích sinh viên và cán bộ nhà trường, chúng tôi tập trung vào việc nghiên cứu, phát triển các giải pháp công nghệ tiên tiến nhằm giải quyết các vấn đề về khoa học và công nghệ được đặt ra.",
+          "UCK Team là một nhóm nghiên cứu và phát triển công nghệ tại Khoa Công nghệ Thông tin, Học viện Nông nghiệp Việt Nam. Được thành lập vào ngày 20 tháng 11 năm 2023 với mục đích đưa công nghệ thông tin vào phục vụ lợi ích sinh viên và cán bộ nhà trường, chúng tôi tập trung vào việc nghiên cứu, phát triển các giải pháp công nghệ nhằm giải quyết các vấn đề về khoa học và công nghệ được đặt ra..",
         "footer.copyright": "Copyright © UCK TEAM",
 
         // Common
@@ -320,7 +324,7 @@ class I18n {
         "banner.vnua": "Vietnam National University",
         "banner.vietnam": "of Agriculture",
         "banner.description":
-          "Where outstanding students of the Faculty of Information Technology - Vietnam National University of Agriculture converge.",
+          "Group of students who love technology from the Department of Information Technology - Vietnam Academy of Agriculture.",
         "banner.academy": "Vietnam National University",
         "banner.values": "Respect, Harmony & Development",
         "banner.faculty_info": "Faculty of Information Technology",
@@ -329,7 +333,7 @@ class I18n {
         // About Us
         "about.title": "About us",
         "about.description":
-          "UCK Team is a leading research and technology development group at the Faculty of Information Technology, Vietnam National University of Agriculture. Established on November 20, 2023, with the mission of bringing information technology to serve the interests of students and school staff, we focus on researching and developing advanced technology solutions to solve scientific and technological problems.",
+          "UCK Team is a technology research and development group at the Faculty of Information Technology, Vietnam Academy of Agriculture. Established on November 20, 2023 with the purpose of bringing information technology to serve the benefits of students and school officials, we focus on researching and developing technology solutions to solve science and technology problems.",
         "about.years_active": "Years active",
         "about.technologies": "Technologies used",
         "about.active_members": "Active members",
@@ -419,7 +423,7 @@ class I18n {
         // Projects
         "projects.title": "Research Topics & Projects",
         "projects.description":
-          "Below is a list of products that UCK TEAM has, is, and will implement. The products range from practical projects to outstanding research topics at Faculty and University levels, applying the newest and most powerful technologies such as: Modern frameworks, powerful AI models, ...",
+          "Below is a list of products that UCK TEAM has been, is and will make. The products range from practical projects to typical scientific research topics at the Faculty and Student level, applying new and effective technologies such as: Modern FrameWorks, AI applications, ...",
         "projects.completed": "Completed & In Progress Projects",
         "projects.planned": "Future Projects",
         "projects.count": "projects",
@@ -530,7 +534,7 @@ class I18n {
         // Policy
         "policy.title": "Student recruitment policy",
         "policy.description":
-          "Join UCK TEAM - A community of outstanding Information Technology students, where young talents connect and develop professional programming skills at the Faculty of Information Technology - Vietnam National University of Agriculture.",
+          "Join UCK TEAM - A community of passionate students majoring in Information Technology, a place to connect and develop professional programming skills from the Faculty of Information Technology - Vietnam Academy of Agriculture.",
         "policy.requirements": "Admission requirements",
         "policy.academic": "Academic",
         "policy.technical": "Technical",
@@ -582,11 +586,14 @@ class I18n {
         "policy.soft_thinking": "• Logical and creative thinking",
         "policy.soft_responsibility":
           "• Serious attitude and high sense of responsibility",
+        "policy.commitment": "Commitment",
+        "policy.commitment_ownership":
+          "• All products created during participation in the team belong to the ownership of the group founders (Mr. Dung and Mr. Hieu)",
 
         // Footer
         "footer.sitemap": "Sitemap",
         "footer.description":
-          "UCK Team is a leading technology research and development group at the Faculty of Information Technology, Vietnam National University of Agriculture with the mission of bringing information technology to serve the interests of students and school management. We focus on researching and developing advanced technology solutions to solve scientific and technological problems.",
+          "UCK Team is a technology research and development group at the Faculty of Information Technology, Vietnam Academy of Agriculture. Established on November 20, 2023 with the purpose of bringing information technology to serve the benefits of students and school officials, we focus on researching and developing technology solutions to solve science and technology problems.",
         "footer.copyright": "Copyright © UCK TEAM",
 
         // Common
